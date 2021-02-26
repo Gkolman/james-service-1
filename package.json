@@ -8,10 +8,43 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "start": "nodemon ./server/server.js",
+    "build": "webpack --watch",
+    "test": "mocha --require @babel/register ./client/tests --recursive",
+    "dev": "webpack serve",
+    "prod": "webpack --mode=production"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "*",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "mocha": "*",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sinon": "^9.2.4",
+    "webpack-combine-loaders": "^2.0.4"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/register": "^7.13.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.0",
+    "enzyme": "^3.11.0",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "jsdom": "16.4.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^8.3.0",
+    "mocha-jsdom": "^2.0.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
