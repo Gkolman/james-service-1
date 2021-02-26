@@ -15,6 +15,7 @@
     "prod": "webpack --mode=production"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
     "axios": "^0.21.1",
     "chai": "*",
     "cors": "^2.8.5",
@@ -23,6 +24,8 @@
     "mocha": "*",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
     "sinon": "^9.2.4",
     "webpack-combine-loaders": "^2.0.4"
   },
@@ -41,6 +44,7 @@
     "mocha": "^8.3.0",
     "mocha-jsdom": "^2.0.0",
     "node-sass": "^5.0.0",
+    "redux-devtools": "^3.7.0",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.24.2",
