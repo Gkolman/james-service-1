@@ -1,7 +1,7 @@
 import React from 'react';
-import style from '../app.scss';
 
-const Header = () => {
+const Header = (props) => {
+  const {style} = props;
   return (
     <div className={style.app}>
       React Skeleton

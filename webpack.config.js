@@ -2,6 +2,7 @@ const path = require('path');
 const combineLoaders = require('webpack-combine-loaders');
 const SRC_DIR = path.join(__dirname, `/client/src`);
 const DIST_DIR = path.join(__dirname, `/client/dist`);
+
 module.exports = {
   devtool: "source-map",
   mode: 'development',
@@ -56,4 +57,4 @@ module.exports = {
       "/": "http://localhost:3001"
     },
   },
-}
+};

@@ -44,19 +44,114 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #303030;
+  font-family: Artic Fox\ 08,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  line-height: 1.5;
+  text-rendering: geometricPrecision;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+strong {
+  font-weight: 700;
 }
 
 // Define a color variable
 $color-sassy: #cc4397;
 $color-blue: #0059ff;
 
-.app {
-  color: $color-blue;
-  font-size: 2rem;
-  text-align: center;
-  .sassyDiv {
-    font-size: 3rem;
-    color: $color-sassy;
-  }
+// .app {
+//   color: $color-blue;
+//   font-size: 2rem;
+//   text-align: center;
+// }
+
+.teaserRoot {
+  padding: 0 20px;
+  position: relative;
+}
+
+.featuresTitle {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.shortDescription {
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 5px;
+  display: block;
+}
+
+.featuresDescription {
+  margin: 0;
+  padding: 0 0 30px;
+}
+
+#productFeatures {
+  margin-top: 50px;
+}
+
+.features {
+  padding: 0;
+  margin-top: 15px;
+  list-style: none;
+}
+
+.features li {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.features li:before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 2px 15px 2px 0;
+  background-color: #959595;
+  border-radius: 50%;
+  content: "";
+}
+
+.descriptionRoot {
+  border-top: 1px solid #d6d6d6;
+}
+
+.descriptionTitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 20px 0;
+  display: block;
+  font-weight: 700;
+}
+
+.descriptionContent {
+  padding: 0 0 50px;
+}
+
+.description .descriptionText {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.descriptionSpec, .descriptionText .descriptionItem {
+  font-size: 14px;
+  line-height: 28px;
 }
