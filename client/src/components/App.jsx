@@ -3,7 +3,7 @@ import axios from 'axios';
 import ProductDetails from './ProductDetails.jsx';
 import ProductFeatures from './ProductFeatures.jsx';
 import ProductDescription from './ProductDescription.jsx';
-import fakeData from '../../dist/fakeData.js';
+// import fakeData from '../../dist/fakeData.js';
 import style from '../app.scss';
 
 class App extends React.Component {
@@ -20,8 +20,6 @@ class App extends React.Component {
 
     return axios(config)
       .then((results) => {
-        console.log(fakeData);
-        console.log(results.data);
         this.setState({
           ...results.data
         })
@@ -29,21 +27,23 @@ class App extends React.Component {
   }
 
   render() {
-    const { productFeatures, productInfo, materialSpecification, technicalDetails, careInstructions } = this.state;
+    const { productFeatures, product_description, material_specification, technical_details, careInstructions } = this.state;
+    const components = Object.entries(this.state);
     let descriptor;
-    if (productInfo) {
-      descriptor = Object.values(productInfo[0]).join('');
+    if (product_description) {
+      descriptor = Object.values(product_description[0]).join('');
     }
-    return (
-      <div>
-        <ProductDetails style={style} />
-        <ProductFeatures productFeatures={productFeatures} style={style} />
-        <ProductDescription currentProductDetails={productInfo} style={style} selector={`Product Description`} descriptor={descriptor} />
-        <ProductDescription currentProductDetails={materialSpecification} style={style} selector={`Material Specification`} />
-        <ProductDescription currentProductDetails={technicalDetails} style={style} selector={`Technical Details`} />
-        <ProductDescription currentProductDetails={careInstructions} style={style} selector={`Care Instructions`} />
-      </div>
-    )
+
+    return components.map((component, index) => {
+      if (index === 0) {
+
+        return <ProductDetails key={index} currentComponentDetails={component[1]} style={style} />
+      } else if (index === 1) {
+        return <ProductFeatures key={index} currentComponentDetails={component[1]} style={style} />
+      } else {
+        return <ProductDescription key={index} currentComponentDetails={component[1]} style={style} selector={component[0].toString().split('_').join(' ')} descriptor={descriptor} />
+      }
+    })
   }
 }
 

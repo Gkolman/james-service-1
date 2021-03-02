@@ -1,8 +1,8 @@
 import React from 'react';
 
 const ProductDetails = (props) => {
-  const { productDetails, style } = props;
-  return productDetails ?
+  const { currentComponentDetails, style } = props;
+  return currentComponentDetails ?
     (
       <div className={style.teaserRoot}>
         <span className={style.featuresTitle}>
@@ -10,7 +10,7 @@ const ProductDetails = (props) => {
        </span>
 
         <span className={style.shortDescription}>
-          {productDetails}
+          {currentComponentDetails}
          </span>
       </div>
     ) : null

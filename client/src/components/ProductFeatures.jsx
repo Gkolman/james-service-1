@@ -2,8 +2,8 @@ import React from 'react';
 
 
 const ProductFeatures = (props) => {
-  const { productFeatures, style } = props;
-  return productFeatures ?
+  const { currentComponentDetails, style } = props;
+  return currentComponentDetails ?
     (<div id={style.productFeatures}>
       <div className={style.teaserRoot}>
         <div className={style.featuresDescription}>
@@ -12,7 +12,7 @@ const ProductFeatures = (props) => {
               Product Features
               </span>
             <ul className={style.features}>
-              {productFeatures.map((feature, index) => {
+              {currentComponentDetails.map((feature, index) => {
                 return feature ?
                   <li key={index}>{feature}</li> : null;
               })}
