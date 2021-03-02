@@ -3,6 +3,7 @@ import axios from 'axios';
 import ProductDetails from './ProductDetails.jsx';
 import ProductFeatures from './ProductFeatures.jsx';
 import ProductDescription from './ProductDescription.jsx';
+import Extra from './Extra.jsx';
 // import fakeData from '../../dist/fakeData.js';
 import style from '../app.scss';
 
@@ -35,8 +36,9 @@ class App extends React.Component {
     }
 
     return components.map((component, index) => {
-      if (index === 0) {
-
+      if (component[0] === 'extra') {
+        return <Extra key={index} currentComponentDetails={component[1]} style={style} />
+      } else if (index === 0) {
         return <ProductDetails key={index} currentComponentDetails={component[1]} style={style} />
       } else if (index === 1) {
         return <ProductFeatures key={index} currentComponentDetails={component[1]} style={style} />

@@ -1,6 +1,6 @@
 // https://www.fjallraven.com/us/en-us/men/jackets/outdoor-jackets/skogso-padded-jacket-m?v=F82279%3a%3a7323450536367
 module.exports = fakeData = {
-  ProductDetails: `Lightweight and convenient winter jacket in G-1000 with synthetic padding that keeps warmth in even when damp. Fixed, snug-fitting hood, several practical pockets and easily gripped details.`,
+  productDetails: `Lightweight and convenient winter jacket in G-1000 with synthetic padding that keeps warmth in even when damp. Fixed, snug-fitting hood, several practical pockets and easily gripped details.`,
   productFeatures:
     [
       `Lightly padded jacket in G-1000 Original filled with G-Loft Supreme.`,
@@ -25,9 +25,12 @@ module.exports = fakeData = {
     { filling: `G-Loft Supreme: 100% polyester` },
     { fill_power: undefined },
     { fill_weight: `145 g/m2` },
+    { reinforcement_areas: undefined },
     { legal_notice: `Contains non-textile elements of animal origin.` },
   ],
   technical_details: [
+    { water_column: undefined },
+    { breathability: undefined },
     { weight: `1120 g` },
     { weight_reference: `in size M` },
     { model_height: `186 cm` },
@@ -35,9 +38,11 @@ module.exports = fakeData = {
     { sleeve_type: `Long sleeve` },
     { hood: `Yes` },
     { hood_features: `Drawcord adjustment` },
+    { closing: undefined },
     { clothing_layer: `Outerwear` },
     { number_of_pockets: `6` },
     { pockets: ` Chest pocket(s), Hand pocket(s), Inner pocket(s), Phone pocket` },
+    { ventilation: undefined }
   ],
   care_instructions: [
     { washing: `40°C normal process` },
@@ -46,5 +51,9 @@ module.exports = fakeData = {
     { drying: `do not tumble dry` },
     { ironing: `iron 1 dot - Max 110°C` },
     { additional_care_instructions: `wash separately, do not use fabric softener` },
+  ],
+  extra: [
+    { title: `Sustainability` },
+    { text: `This product uses Fjällräven G-1000, our own hardwearing outdoor fabric that together with timeless design, creates products that are able to stay in use for many, many years. That’s sustainability through longevity.` },
   ]
 }

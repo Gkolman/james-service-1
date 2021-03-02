@@ -28,6 +28,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+
 body {
 	line-height: 1;
 }
@@ -65,6 +79,15 @@ li {
 
 strong {
   font-weight: 700;
+}
+
+h2 {
+  line-height: 1.1em;
+  margin: 1em 0 0;
+}
+
+h2:first-child {
+  margin-top: 0;
 }
 
 .teaserRoot {
@@ -134,6 +157,7 @@ strong {
 
 .descriptionContent {
   padding: 0 0 50px;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .description .descriptionText {
@@ -150,3 +174,46 @@ strong {
   margin-top: 20px;
 }
 
+.pdpArea {
+  margin-top: 40px;
+}
+
+.article {
+  align-items: center;
+  border: none;
+}
+
+.articleTitle {
+  text-align: left;
+  font-size: 30px;
+}
+
+.articleMedia {
+  width: 66%;
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+}
+
+.pictureRoot {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.articleContent {
+  opacity: 1;
+  width: 50%;
+  padding: 0 20px 0 30px;
+};
+
+.articleContent>*+* {
+  margin-top: 20px;
+}
+
+.articleExcerpt {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'Adobe Caslon W01,serif';
+}
