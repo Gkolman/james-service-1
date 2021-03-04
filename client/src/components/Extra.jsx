@@ -6,9 +6,9 @@ const Extra = (props) => {
     <div className={style.pdpArea}>
       <div className={`${style.teaserRoot} ${style.articleRoot}`}>
         <article className={style.article}>
-          <a href className={style.articleMedia}>
+          <a href='true' className={style.articleMedia}>
             <picture className={style.pictureRoot}>
-              <img src={`https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.talkwalker.com%2Fblog%2Fwhat-is-image-analysis&psig=AOvVaw1acG9tfUsafBP6-OWqhM74&ust=1614803987888000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODL3eK7ku8CFQAAAAAdAAAAABAD`}></img>
+              {/* <img src={}></img> */}
             </picture>
           </a>
           <div className={style.articleContent}>

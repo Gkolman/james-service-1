@@ -217,3 +217,84 @@ h2:first-child {
   line-height: 28px;
   font-family: 'Adobe Caslon W01,serif';
 }
+
+.footerRoot {
+  font-size: 14px;
+  padding: 80px 25px;
+  text-align: left;
+  background-color: #e8e7e6;
+}
+
+.footerContainer {
+  max-width: 1185px;
+  padding: 0 0 0 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+}
+
+.footerColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  float: none;
+  clear: none;
+  overflow: visible;
+  column-count: auto;
+  column-width: auto;
+  column-span: none;
+  contain: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footerGroup {}
+
+.footerTitle {
+    position: relative;
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.footerLinks {
+  padding: 0;
+  margin:  0;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.footerLink {
+  padding: 0;
+  border-bottom: none;
+  display: flex;
+  color: #303030;
+  text-decoration: none;
+}
+
+.linkRoot {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+a.linkRoot {
+  color: #303030;
+  text-decoration: none;
+}

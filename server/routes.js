@@ -14,7 +14,6 @@ router.get('/info', () => {
 })
 
 router.post('/products', () => {
-
 });
 
 

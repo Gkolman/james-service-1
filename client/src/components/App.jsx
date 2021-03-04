@@ -4,6 +4,7 @@ import ProductDetails from './ProductDetails.jsx';
 import ProductFeatures from './ProductFeatures.jsx';
 import ProductDescription from './ProductDescription.jsx';
 import Extra from './Extra.jsx';
+import FooterJSX from './Footer.jsx';
 // import fakeData from '../../dist/fakeData.js';
 import style from '../app.scss';
 
@@ -46,6 +47,8 @@ class App extends React.Component {
         return <ProductDescription key={index} currentComponentDetails={component[1]} style={style} selector={component[0].toString().split('_').join(' ')} descriptor={descriptor} />
       }
     })
+      .concat(<FooterJSX key={-1} style={style} />)
+
   }
 }
 
