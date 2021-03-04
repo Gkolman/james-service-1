@@ -2,6 +2,8 @@ import React from 'react';
 
 const FooterJSX = (props) => {
   const { style } = props;
+  const { footerRoot, footerContainer, footerLink, footerLinks, footerTitle, linkRoot, footerGroup, footerColumn } = style;
+
   const customerServiceArr = [`Contact Us`, `FAQ`, `Shipping`, `Returns`, `Warranty`, `Buyers Guide`, `Care & Repair`, `Size Guide`, `Industry Pro Program`];
   const aboutFJArr = [`About Us`, `Sustainability`, `Our Materials`, `Careers`, `Press Room`];
   const legalArr = [`Terms & Conditions`, `Accessibility Statement`, `Privacy Policy`];
@@ -9,19 +11,19 @@ const FooterJSX = (props) => {
 
   const footerColumns = [[[`Customer Service`, customerServiceArr]], [[`About Fjallraven`, aboutFJArr], [`Legal`, legalArr]], [[`Our Adventures`, ourAdventuresArr]]];
   return (
-    <footer className={style.footerRoot}>
-      <div className={style.footerContainer}>
+    <footer className={footerRoot}>
+      <div className={footerContainer}>
 
         {footerColumns.map((column, index) => {
-          return <nav key={index} className={style.footerColumn}>
+          return <nav key={index} className={footerColumn}>
             {column.map((group, index) => {
-              return <div key={index} className={style.footerGroup}>
-                <label className={style.footerTitle}>{group[0]}</label>
-                <ul className={style.footerLinks}>
+              return <div key={index} className={footerGroup}>
+                <label className={footerTitle}>{group[0]}</label>
+                <ul className={footerLinks}>
                   {group[1].map((item, index) => {
                     return (
-                      <li key={index} className={style.footerlink}>
-                        <a className={style.linkRoot}>
+                      <li key={index} className={footerLink}>
+                        <a className={linkRoot}>
                           <span>{item}</span>
                         </a>
                       </li>
