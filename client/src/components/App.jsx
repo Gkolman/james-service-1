@@ -35,19 +35,22 @@ class App extends React.Component {
     if (product_description) {
       descriptor = Object.values(product_description[0]).join('');
     }
-
-    return components.map((component, index) => {
-      if (component[0] === 'extra') {
-        return <Extra key={index} currentComponentDetails={component[1]} style={style} />
-      } else if (index === 0) {
-        return <ProductDetails key={index} currentComponentDetails={component[1]} style={style} />
-      } else if (index === 1) {
-        return <ProductFeatures key={index} currentComponentDetails={component[1]} style={style} />
-      } else {
-        return <ProductDescription key={index} currentComponentDetails={component[1]} style={style} selector={component[0].toString().split('_').join(' ')} descriptor={descriptor} />
-      }
-    })
-      .concat(<FooterJSX key={-1} style={style} />)
+    return (
+      <div id={style.productFeatures}>
+        {components.map((component, index) => {
+          if (component[0] === 'extra') {
+            return <Extra key={index} currentComponentDetails={component[1]} style={style} />
+          } else if (index === 0) {
+            return <ProductDetails key={index} currentComponentDetails={component[1]} style={style} />
+          } else if (index === 1) {
+            return <ProductFeatures key={index} currentComponentDetails={component[1]} style={style} />
+          } else {
+            return <ProductDescription key={index} currentComponentDetails={component[1]} style={style} selector={component[0].toString().split('_').join(' ')} descriptor={descriptor} />
+          }
+        })}
+        <FooterJSX style={style} />
+      </div>
+    )
 
   }
 }

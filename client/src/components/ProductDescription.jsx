@@ -3,41 +3,99 @@ import React from 'react';
 const ProductDescription = (props) => {
   const { style, currentComponentDetails, material_specification, careInstructions, selector, descriptor } = props;
 
-  const { teaserRoot, descriptionRoot, descriptionTitle, descriptionContent, description, descriptionText, descriptionSpec, descriptionItem, descriptionItemLabel, descriptionInfo } = style;
+  const { teaserRoot, descriptionRoot, descriptionTitle, descriptionContent, description, descriptionText, descriptionSpec, descriptionItem, descriptionItemLabel, descriptionInfo, materialSpecification } = style;
+
+  let currentRootId = selector.split(' ');
+  currentRootId[1] = currentRootId[1][0].toUpperCase() + currentRootId[1].slice(1);
+  currentRootId = currentRootId.join('');
 
   return currentComponentDetails !== undefined ? (
-    <div className={`${teaserRoot} ${descriptionRoot}`}>
+
+    <div id={style[currentRootId]} className={`${teaserRoot} ${descriptionRoot}`}>
       <span className={descriptionTitle}>{selector}</span>
       <div className={descriptionContent}>
-        {descriptor !== undefined && selector === `product description` ?
+        {
           <div className={description}>
-            <div className={descriptionText}>
-              {`${descriptor}`}
-            </div>
-          </div> : null
+            <p className={descriptionText}>
+              {
+
+                selector === 'material specification' ?
+                  currentComponentDetails.map((item, index) => {
+                    const value = Object.values(item)[0];
+                    let title = Object.keys(item)[0];
+                    if (title !== undefined) {
+                      title = title.replaceAll('_', ' ');
+                      title = `${title[0].toUpperCase()}${title.slice(1)}: `;
+                    }
+                    return value !== undefined ?
+                      (<span key={index} className={descriptionItem}>
+                        <strong className={descriptionItemLabel}>
+                          {`${title}`}
+                        </strong>
+                        {value}
+                        <br />
+                      </span>)
+                      : null
+                  })
+                  : selector === 'product description' ?
+                    <span className={descriptionItem}>
+                      {currentComponentDetails[0][0].product_description}
+                      <br />
+                    </span>
+                    :
+                    currentComponentDetails[0].map((item, index) => {
+                      const value = Object.values(item)[0];
+                      let title = Object.keys(item)[0];
+                      if (title !== undefined) {
+                        title = title.replaceAll('_', ' ');
+                        title = `${title[0].toUpperCase()}${title.slice(1)}: `;
+                      }
+                      return value !== undefined ?
+                        (<span key={index} className={descriptionItem}>
+                          <strong className={descriptionItemLabel}>
+                            {`${title}`}
+                          </strong>
+                          {value}
+                          <br />
+                        </span>)
+                        : null;
+
+                    })
+
+              }
+            </p>
+          </div>
         }
 
-        <div className={descriptionSpec}>
-          <div className={descriptionText}>
-            {currentComponentDetails.map((item, index) => {
-              const value = Object.values(item)[0];
-              let title = Object.keys(item)[0];
-              if (title !== undefined) {
-                title = title.replaceAll('_', ' ');
-                title = `${title[0].toUpperCase()}${title.slice(1)}: `;
-              }
-              return value !== undefined && !(selector === `product description` && index === 0) ?
-                (<span key={index} className={descriptionItem}>
-                  <strong className={descriptionItemLabel}>
-                    {`${title}`}
-                  </strong>
-                  {value}
-                  <br />
-                </span>)
-                : null
-            })}
-          </div>
-        </div>
+        {selector !== `material specification` ?
+          <div className={descriptionSpec}>
+            <p className={descriptionText}>
+              {
+                currentComponentDetails[1].map((item, index, arr) => {
+                  console.log(item);
+                  // if (selector === 'product description') {
+                  const value = Object.values(item)[0];
+                  let title = Object.keys(item)[0];
+                  if (title !== undefined) {
+                    title = title.replaceAll('_', ' ');
+                    title = `${title[0].toUpperCase()}${title.slice(1)}: `;
+                  }
+                  return value !== undefined ?
+                    (<span key={index} className={descriptionItem}>
+                      <strong className={descriptionItemLabel}>
+                        {`${title}`}
+                      </strong>
+                      {value}
+                      <br />
+                    </span>)
+                    : null
+                  // }
+                })}
+            </p>
+
+          </div> : null}
+
+
       </div>
     </div>
   ) : null;

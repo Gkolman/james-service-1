@@ -4,8 +4,8 @@ import React from 'react';
 const ProductFeatures = (props) => {
   const { currentComponentDetails, style } = props;
   return currentComponentDetails ?
-    (<div id={style.productFeatures}>
-      <div className={style.teaserRoot}>
+    (
+      <div className={`${style.teaserRoot} ${style.featuresRoot}`}>
         <div className={style.featuresDescription}>
           <div>
             <span className={style.featuresTitle}>
@@ -19,7 +19,6 @@ const ProductFeatures = (props) => {
             </ul>
           </div>
         </div>
-      </div>
     </div>
     ) : null
 }

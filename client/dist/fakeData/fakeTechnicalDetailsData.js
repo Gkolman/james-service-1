@@ -12,803 +12,903 @@
 module.exports =
 [
   {
-    "weight": "3975 g",
+    "weight": "1434 g",
     "weight_reference": "in size L",
-    "model_height": "211 cm",
+    "model_height": "189 cm",
     "model_size": "M",
-    "number_of_pockets": 2,
-    "pockets": "deserunt pocket(s) commodo pocket(s) tempor pocket(s)"
-  },
-  {
-    "weight": "1775 g",
-    "weight_reference": "in size M",
-    "model_height": "155 cm",
-    "model_size": "L",
-    "number_of_pockets": 5,
-    "pockets": "consectetur pocket(s) deserunt pocket(s) nulla pocket(s)"
-  },
-  {
-    "weight": "4669 g",
-    "weight_reference": "in size XL",
-    "model_height": "175 cm",
-    "model_size": "XS",
-    "number_of_pockets": 5,
-    "pockets": "anim pocket(s) dolor pocket(s) aliqua pocket(s)"
-  },
-  {
-    "weight": "1802 g",
-    "weight_reference": "in size L",
-    "model_height": "155 cm",
-    "model_size": "L",
-    "number_of_pockets": 2,
-    "pockets": "anim pocket(s) et pocket(s) duis pocket(s)"
-  },
-  {
-    "weight": "3033 g",
-    "weight_reference": "in size M",
-    "model_height": "185 cm",
-    "model_size": "XL",
-    "number_of_pockets": 4,
-    "pockets": "adipisicing pocket(s) eiusmod pocket(s) laborum pocket(s)"
-  },
-  {
-    "weight": "4094 g",
-    "weight_reference": "in size XL",
-    "model_height": "206 cm",
-    "model_size": "XL",
-    "number_of_pockets": 4,
-    "pockets": "et pocket(s) ut pocket(s) commodo pocket(s)"
-  },
-  {
-    "weight": "2995 g",
-    "weight_reference": "in size XL",
-    "model_height": "201 cm",
-    "model_size": "L",
+    "sleeve_type": "labore sit",
     "number_of_pockets": 6,
-    "pockets": "enim pocket(s) minim pocket(s) exercitation pocket(s)"
+    "pockets": "do pocket(s) consectetur pocket(s) nulla pocket(s)"
   },
   {
-    "weight": "3222 g",
-    "weight_reference": "in size S",
-    "model_height": "140 cm",
-    "model_size": "XL",
-    "number_of_pockets": 3,
-    "pockets": "anim pocket(s) est pocket(s) est pocket(s)"
-  },
-  {
-    "weight": "2370 g",
-    "weight_reference": "in size M",
-    "model_height": "188 cm",
-    "model_size": "XS",
-    "number_of_pockets": 2,
-    "pockets": "commodo pocket(s) id pocket(s) ea pocket(s)"
-  },
-  {
-    "weight": "3203 g",
+    "weight": "3569 g",
     "weight_reference": "in size XS",
-    "model_height": "163 cm",
+    "model_height": "164 cm",
     "model_size": "L",
-    "number_of_pockets": 2,
-    "pockets": "occaecat pocket(s) aute pocket(s) do pocket(s)"
-  },
-  {
-    "weight": "1676 g",
-    "weight_reference": "in size XS",
-    "model_height": "159 cm",
-    "model_size": "XL",
+    "sleeve_type": "quis voluptate",
     "number_of_pockets": 6,
-    "pockets": "consectetur pocket(s) Lorem pocket(s) veniam pocket(s)"
+    "pockets": "exercitation pocket(s) elit pocket(s) velit pocket(s)"
   },
   {
-    "weight": "2179 g",
-    "weight_reference": "in size L",
-    "model_height": "148 cm",
-    "model_size": "XS",
-    "number_of_pockets": 2,
-    "pockets": "Lorem pocket(s) id pocket(s) quis pocket(s)"
-  },
-  {
-    "weight": "1073 g",
-    "weight_reference": "in size XL",
-    "model_height": "159 cm",
+    "weight": "1036 g",
+    "weight_reference": "in size M",
+    "model_height": "178 cm",
     "model_size": "L",
-    "number_of_pockets": 2,
-    "pockets": "aliquip pocket(s) ullamco pocket(s) commodo pocket(s)"
+    "sleeve_type": "ea amet",
+    "number_of_pockets": 4,
+    "pockets": "pariatur pocket(s) excepteur pocket(s) ullamco pocket(s)"
   },
   {
-    "weight": "3884 g",
-    "weight_reference": "in size M",
-    "model_height": "161 cm",
-    "model_size": "S",
-    "number_of_pockets": 3,
-    "pockets": "enim pocket(s) irure pocket(s) nisi pocket(s)"
-  },
-  {
-    "weight": "2508 g",
-    "weight_reference": "in size M",
-    "model_height": "198 cm",
-    "model_size": "L",
-    "number_of_pockets": 5,
-    "pockets": "sint pocket(s) cupidatat pocket(s) laboris pocket(s)"
-  },
-  {
-    "weight": "809 g",
-    "weight_reference": "in size M",
+    "weight": "2811 g",
+    "weight_reference": "in size XS",
     "model_height": "199 cm",
     "model_size": "S",
-    "number_of_pockets": 4,
-    "pockets": "officia pocket(s) non pocket(s) et pocket(s)"
-  },
-  {
-    "weight": "3763 g",
-    "weight_reference": "in size M",
-    "model_height": "160 cm",
-    "model_size": "S",
-    "number_of_pockets": 4,
-    "pockets": "ullamco pocket(s) officia pocket(s) officia pocket(s)"
-  },
-  {
-    "weight": "966 g",
-    "weight_reference": "in size S",
-    "model_height": "144 cm",
-    "model_size": "M",
+    "sleeve_type": "consectetur incididunt",
     "number_of_pockets": 2,
-    "pockets": "nisi pocket(s) exercitation pocket(s) in pocket(s)"
+    "pockets": "ea pocket(s) esse pocket(s) sunt pocket(s)"
   },
   {
-    "weight": "3653 g",
-    "weight_reference": "in size M",
-    "model_height": "180 cm",
-    "model_size": "XS",
-    "number_of_pockets": 2,
-    "pockets": "fugiat pocket(s) ea pocket(s) pariatur pocket(s)"
-  },
-  {
-    "weight": "1748 g",
-    "weight_reference": "in size L",
-    "model_height": "165 cm",
-    "model_size": "XS",
-    "number_of_pockets": 5,
-    "pockets": "Lorem pocket(s) nostrud pocket(s) cillum pocket(s)"
-  },
-  {
-    "weight": "4086 g",
-    "weight_reference": "in size XS",
-    "model_height": "209 cm",
-    "model_size": "XL",
-    "number_of_pockets": 4,
-    "pockets": "sit pocket(s) elit pocket(s) ullamco pocket(s)"
-  },
-  {
-    "weight": "742 g",
-    "weight_reference": "in size S",
-    "model_height": "209 cm",
-    "model_size": "XL",
-    "number_of_pockets": 2,
-    "pockets": "consequat pocket(s) nostrud pocket(s) ullamco pocket(s)"
-  },
-  {
-    "weight": "3406 g",
-    "weight_reference": "in size S",
-    "model_height": "216 cm",
-    "model_size": "XS",
-    "number_of_pockets": 2,
-    "pockets": "culpa pocket(s) adipisicing pocket(s) in pocket(s)"
-  },
-  {
-    "weight": "2560 g",
-    "weight_reference": "in size M",
-    "model_height": "173 cm",
-    "model_size": "M",
-    "number_of_pockets": 5,
-    "pockets": "esse pocket(s) ad pocket(s) nostrud pocket(s)"
-  },
-  {
-    "weight": "3695 g",
-    "weight_reference": "in size XL",
-    "model_height": "173 cm",
-    "model_size": "XL",
-    "number_of_pockets": 3,
-    "pockets": "do pocket(s) eu pocket(s) quis pocket(s)"
-  },
-  {
-    "weight": "3696 g",
-    "weight_reference": "in size M",
-    "model_height": "220 cm",
-    "model_size": "XS",
-    "number_of_pockets": 1,
-    "pockets": "enim pocket(s) reprehenderit pocket(s) dolore pocket(s)"
-  },
-  {
-    "weight": "4526 g",
+    "weight": "4991 g",
     "weight_reference": "in size S",
     "model_height": "168 cm",
     "model_size": "S",
-    "number_of_pockets": 3,
-    "pockets": "occaecat pocket(s) dolore pocket(s) duis pocket(s)"
+    "sleeve_type": "aliqua proident",
+    "number_of_pockets": 2,
+    "pockets": "labore pocket(s) laboris pocket(s) adipisicing pocket(s)"
   },
   {
-    "weight": "4151 g",
-    "weight_reference": "in size XL",
-    "model_height": "174 cm",
-    "model_size": "XS",
-    "number_of_pockets": 5,
-    "pockets": "id pocket(s) ipsum pocket(s) voluptate pocket(s)"
-  },
-  {
-    "weight": "1461 g",
-    "weight_reference": "in size M",
-    "model_height": "185 cm",
-    "model_size": "S",
-    "number_of_pockets": 1,
-    "pockets": "consectetur pocket(s) magna pocket(s) non pocket(s)"
-  },
-  {
-    "weight": "1265 g",
+    "weight": "4720 g",
     "weight_reference": "in size XS",
-    "model_height": "153 cm",
-    "model_size": "S",
-    "number_of_pockets": 3,
-    "pockets": "pariatur pocket(s) ea pocket(s) do pocket(s)"
-  },
-  {
-    "weight": "3826 g",
-    "weight_reference": "in size XS",
-    "model_height": "184 cm",
-    "model_size": "L",
-    "number_of_pockets": 6,
-    "pockets": "anim pocket(s) ut pocket(s) dolore pocket(s)"
-  },
-  {
-    "weight": "694 g",
-    "weight_reference": "in size XL",
-    "model_height": "192 cm",
-    "model_size": "L",
-    "number_of_pockets": 3,
-    "pockets": "magna pocket(s) dolore pocket(s) esse pocket(s)"
-  },
-  {
-    "weight": "1013 g",
-    "weight_reference": "in size M",
-    "model_height": "201 cm",
-    "model_size": "L",
-    "number_of_pockets": 1,
-    "pockets": "ea pocket(s) aliqua pocket(s) do pocket(s)"
-  },
-  {
-    "weight": "636 g",
-    "weight_reference": "in size L",
-    "model_height": "215 cm",
-    "model_size": "XL",
-    "number_of_pockets": 1,
-    "pockets": "amet pocket(s) ut pocket(s) consequat pocket(s)"
-  },
-  {
-    "weight": "802 g",
-    "weight_reference": "in size XS",
-    "model_height": "141 cm",
-    "model_size": "XS",
-    "number_of_pockets": 3,
-    "pockets": "cillum pocket(s) mollit pocket(s) ea pocket(s)"
-  },
-  {
-    "weight": "3142 g",
-    "weight_reference": "in size XL",
-    "model_height": "180 cm",
-    "model_size": "L",
-    "number_of_pockets": 4,
-    "pockets": "do pocket(s) incididunt pocket(s) nostrud pocket(s)"
-  },
-  {
-    "weight": "1671 g",
-    "weight_reference": "in size L",
     "model_height": "169 cm",
     "model_size": "S",
-    "number_of_pockets": 2,
-    "pockets": "Lorem pocket(s) enim pocket(s) qui pocket(s)"
+    "sleeve_type": "non cupidatat",
+    "number_of_pockets": 3,
+    "pockets": "ea pocket(s) eu pocket(s) tempor pocket(s)"
   },
   {
-    "weight": "4739 g",
+    "weight": "1047 g",
     "weight_reference": "in size L",
-    "model_height": "166 cm",
-    "model_size": "XS",
-    "number_of_pockets": 1,
-    "pockets": "laboris pocket(s) labore pocket(s) et pocket(s)"
-  },
-  {
-    "weight": "3019 g",
-    "weight_reference": "in size XS",
-    "model_height": "144 cm",
-    "model_size": "L",
-    "number_of_pockets": 3,
-    "pockets": "exercitation pocket(s) tempor pocket(s) do pocket(s)"
-  },
-  {
-    "weight": "2528 g",
-    "weight_reference": "in size XS",
-    "model_height": "178 cm",
-    "model_size": "L",
-    "number_of_pockets": 6,
-    "pockets": "cupidatat pocket(s) ex pocket(s) id pocket(s)"
-  },
-  {
-    "weight": "4873 g",
-    "weight_reference": "in size M",
-    "model_height": "150 cm",
+    "model_height": "220 cm",
     "model_size": "M",
-    "number_of_pockets": 5,
-    "pockets": "ut pocket(s) aliquip pocket(s) ut pocket(s)"
-  },
-  {
-    "weight": "2731 g",
-    "weight_reference": "in size M",
-    "model_height": "182 cm",
-    "model_size": "XS",
-    "number_of_pockets": 2,
-    "pockets": "anim pocket(s) cupidatat pocket(s) id pocket(s)"
-  },
-  {
-    "weight": "1578 g",
-    "weight_reference": "in size XS",
-    "model_height": "155 cm",
-    "model_size": "L",
+    "sleeve_type": "fugiat fugiat",
     "number_of_pockets": 6,
-    "pockets": "esse pocket(s) reprehenderit pocket(s) eiusmod pocket(s)"
+    "pockets": "fugiat pocket(s) adipisicing pocket(s) pariatur pocket(s)"
   },
   {
-    "weight": "3580 g",
-    "weight_reference": "in size XL",
-    "model_height": "152 cm",
-    "model_size": "S",
-    "number_of_pockets": 4,
-    "pockets": "consequat pocket(s) ipsum pocket(s) ex pocket(s)"
-  },
-  {
-    "weight": "4520 g",
-    "weight_reference": "in size XS",
-    "model_height": "218 cm",
-    "model_size": "M",
-    "number_of_pockets": 6,
-    "pockets": "irure pocket(s) do pocket(s) dolore pocket(s)"
-  },
-  {
-    "weight": "948 g",
-    "weight_reference": "in size XL",
-    "model_height": "192 cm",
-    "model_size": "XS",
-    "number_of_pockets": 3,
-    "pockets": "id pocket(s) deserunt pocket(s) ut pocket(s)"
-  },
-  {
-    "weight": "4656 g",
-    "weight_reference": "in size XS",
-    "model_height": "172 cm",
-    "model_size": "XL",
-    "number_of_pockets": 4,
-    "pockets": "ad pocket(s) cupidatat pocket(s) amet pocket(s)"
-  },
-  {
-    "weight": "4790 g",
-    "weight_reference": "in size M",
-    "model_height": "202 cm",
-    "model_size": "L",
-    "number_of_pockets": 1,
-    "pockets": "enim pocket(s) elit pocket(s) commodo pocket(s)"
-  },
-  {
-    "weight": "1308 g",
-    "weight_reference": "in size XL",
-    "model_height": "201 cm",
-    "model_size": "M",
-    "number_of_pockets": 6,
-    "pockets": "fugiat pocket(s) irure pocket(s) Lorem pocket(s)"
-  },
-  {
-    "weight": "1456 g",
+    "weight": "1779 g",
     "weight_reference": "in size S",
-    "model_height": "143 cm",
-    "model_size": "S",
-    "number_of_pockets": 3,
-    "pockets": "fugiat pocket(s) esse pocket(s) amet pocket(s)"
-  },
-  {
-    "weight": "3282 g",
-    "weight_reference": "in size L",
-    "model_height": "207 cm",
-    "model_size": "L",
-    "number_of_pockets": 5,
-    "pockets": "in pocket(s) ut pocket(s) voluptate pocket(s)"
-  },
-  {
-    "weight": "4598 g",
-    "weight_reference": "in size XS",
-    "model_height": "150 cm",
-    "model_size": "XS",
-    "number_of_pockets": 4,
-    "pockets": "anim pocket(s) fugiat pocket(s) ullamco pocket(s)"
-  },
-  {
-    "weight": "2406 g",
-    "weight_reference": "in size XL",
-    "model_height": "178 cm",
+    "model_height": "144 cm",
     "model_size": "XL",
-    "number_of_pockets": 4,
-    "pockets": "officia pocket(s) magna pocket(s) elit pocket(s)"
+    "sleeve_type": "officia proident",
+    "number_of_pockets": 3,
+    "pockets": "reprehenderit pocket(s) exercitation pocket(s) aliquip pocket(s)"
   },
   {
-    "weight": "3682 g",
+    "weight": "2113 g",
+    "weight_reference": "in size XS",
+    "model_height": "189 cm",
+    "model_size": "XS",
+    "sleeve_type": "pariatur aliqua",
+    "number_of_pockets": 6,
+    "pockets": "veniam pocket(s) culpa pocket(s) sit pocket(s)"
+  },
+  {
+    "weight": "4760 g",
     "weight_reference": "in size M",
     "model_height": "195 cm",
-    "model_size": "XL",
-    "number_of_pockets": 5,
-    "pockets": "adipisicing pocket(s) ipsum pocket(s) consequat pocket(s)"
-  },
-  {
-    "weight": "3955 g",
-    "weight_reference": "in size XL",
-    "model_height": "160 cm",
     "model_size": "L",
+    "sleeve_type": "sit laboris",
     "number_of_pockets": 6,
-    "pockets": "et pocket(s) do pocket(s) aliqua pocket(s)"
+    "pockets": "sint pocket(s) commodo pocket(s) esse pocket(s)"
   },
   {
-    "weight": "1686 g",
-    "weight_reference": "in size XL",
-    "model_height": "168 cm",
-    "model_size": "L",
-    "number_of_pockets": 6,
-    "pockets": "enim pocket(s) tempor pocket(s) dolor pocket(s)"
-  },
-  {
-    "weight": "3749 g",
-    "weight_reference": "in size XL",
-    "model_height": "194 cm",
-    "model_size": "L",
-    "number_of_pockets": 5,
-    "pockets": "nulla pocket(s) enim pocket(s) commodo pocket(s)"
-  },
-  {
-    "weight": "1702 g",
-    "weight_reference": "in size M",
-    "model_height": "205 cm",
-    "model_size": "L",
-    "number_of_pockets": 3,
-    "pockets": "quis pocket(s) ex pocket(s) dolore pocket(s)"
-  },
-  {
-    "weight": "2351 g",
-    "weight_reference": "in size L",
-    "model_height": "202 cm",
-    "model_size": "XL",
-    "number_of_pockets": 6,
-    "pockets": "ipsum pocket(s) ipsum pocket(s) magna pocket(s)"
-  },
-  {
-    "weight": "3644 g",
-    "weight_reference": "in size S",
-    "model_height": "208 cm",
-    "model_size": "L",
-    "number_of_pockets": 1,
-    "pockets": "adipisicing pocket(s) laboris pocket(s) dolor pocket(s)"
-  },
-  {
-    "weight": "2221 g",
-    "weight_reference": "in size L",
-    "model_height": "146 cm",
-    "model_size": "M",
-    "number_of_pockets": 2,
-    "pockets": "nisi pocket(s) est pocket(s) nulla pocket(s)"
-  },
-  {
-    "weight": "1389 g",
-    "weight_reference": "in size XL",
-    "model_height": "212 cm",
-    "model_size": "L",
-    "number_of_pockets": 4,
-    "pockets": "eu pocket(s) ad pocket(s) culpa pocket(s)"
-  },
-  {
-    "weight": "3150 g",
+    "weight": "3123 g",
     "weight_reference": "in size XL",
     "model_height": "184 cm",
-    "model_size": "S",
-    "number_of_pockets": 3,
-    "pockets": "incididunt pocket(s) exercitation pocket(s) enim pocket(s)"
-  },
-  {
-    "weight": "3526 g",
-    "weight_reference": "in size S",
-    "model_height": "157 cm",
-    "model_size": "XS",
-    "number_of_pockets": 1,
-    "pockets": "magna pocket(s) enim pocket(s) in pocket(s)"
-  },
-  {
-    "weight": "2486 g",
-    "weight_reference": "in size XS",
-    "model_height": "220 cm",
-    "model_size": "XS",
-    "number_of_pockets": 5,
-    "pockets": "consectetur pocket(s) incididunt pocket(s) ullamco pocket(s)"
-  },
-  {
-    "weight": "3288 g",
-    "weight_reference": "in size XS",
-    "model_height": "181 cm",
-    "model_size": "XS",
-    "number_of_pockets": 1,
-    "pockets": "commodo pocket(s) elit pocket(s) proident pocket(s)"
-  },
-  {
-    "weight": "2695 g",
-    "weight_reference": "in size XL",
-    "model_height": "197 cm",
-    "model_size": "S",
-    "number_of_pockets": 4,
-    "pockets": "fugiat pocket(s) nisi pocket(s) pariatur pocket(s)"
-  },
-  {
-    "weight": "2620 g",
-    "weight_reference": "in size XL",
-    "model_height": "189 cm",
-    "model_size": "S",
-    "number_of_pockets": 2,
-    "pockets": "in pocket(s) consectetur pocket(s) deserunt pocket(s)"
-  },
-  {
-    "weight": "2606 g",
-    "weight_reference": "in size S",
-    "model_height": "148 cm",
-    "model_size": "S",
-    "number_of_pockets": 3,
-    "pockets": "culpa pocket(s) fugiat pocket(s) est pocket(s)"
-  },
-  {
-    "weight": "1563 g",
-    "weight_reference": "in size XL",
-    "model_height": "165 cm",
-    "model_size": "XS",
-    "number_of_pockets": 2,
-    "pockets": "proident pocket(s) est pocket(s) aliquip pocket(s)"
-  },
-  {
-    "weight": "1944 g",
-    "weight_reference": "in size L",
-    "model_height": "190 cm",
     "model_size": "M",
-    "number_of_pockets": 5,
-    "pockets": "cillum pocket(s) sunt pocket(s) consectetur pocket(s)"
+    "sleeve_type": "dolore tempor",
+    "number_of_pockets": 6,
+    "pockets": "ut pocket(s) consequat pocket(s) eu pocket(s)"
   },
   {
-    "weight": "3907 g",
-    "weight_reference": "in size M",
-    "model_height": "179 cm",
-    "model_size": "L",
-    "number_of_pockets": 2,
-    "pockets": "minim pocket(s) ut pocket(s) qui pocket(s)"
-  },
-  {
-    "weight": "3848 g",
-    "weight_reference": "in size XS",
-    "model_height": "158 cm",
+    "weight": "2388 g",
+    "weight_reference": "in size L",
+    "model_height": "202 cm",
     "model_size": "XS",
+    "sleeve_type": "eu tempor",
+    "number_of_pockets": 5,
+    "pockets": "aliquip pocket(s) culpa pocket(s) excepteur pocket(s)"
+  },
+  {
+    "weight": "3493 g",
+    "weight_reference": "in size XL",
+    "model_height": "208 cm",
+    "model_size": "M",
+    "sleeve_type": "dolore reprehenderit",
+    "number_of_pockets": 3,
+    "pockets": "voluptate pocket(s) reprehenderit pocket(s) culpa pocket(s)"
+  },
+  {
+    "weight": "2826 g",
+    "weight_reference": "in size XL",
+    "model_height": "149 cm",
+    "model_size": "XS",
+    "sleeve_type": "reprehenderit ad",
     "number_of_pockets": 2,
-    "pockets": "consectetur pocket(s) nulla pocket(s) et pocket(s)"
+    "pockets": "officia pocket(s) ea pocket(s) id pocket(s)"
+  },
+  {
+    "weight": "3968 g",
+    "weight_reference": "in size L",
+    "model_height": "164 cm",
+    "model_size": "M",
+    "sleeve_type": "nostrud eu",
+    "number_of_pockets": 2,
+    "pockets": "amet pocket(s) Lorem pocket(s) officia pocket(s)"
+  },
+  {
+    "weight": "3664 g",
+    "weight_reference": "in size XL",
+    "model_height": "184 cm",
+    "model_size": "L",
+    "sleeve_type": "magna qui",
+    "number_of_pockets": 1,
+    "pockets": "non pocket(s) dolor pocket(s) nulla pocket(s)"
+  },
+  {
+    "weight": "1854 g",
+    "weight_reference": "in size L",
+    "model_height": "179 cm",
+    "model_size": "S",
+    "sleeve_type": "sunt reprehenderit",
+    "number_of_pockets": 2,
+    "pockets": "officia pocket(s) sunt pocket(s) eu pocket(s)"
+  },
+  {
+    "weight": "2888 g",
+    "weight_reference": "in size M",
+    "model_height": "209 cm",
+    "model_size": "XL",
+    "sleeve_type": "ad veniam",
+    "number_of_pockets": 6,
+    "pockets": "amet pocket(s) proident pocket(s) enim pocket(s)"
+  },
+  {
+    "weight": "1570 g",
+    "weight_reference": "in size XL",
+    "model_height": "181 cm",
+    "model_size": "M",
+    "sleeve_type": "ad enim",
+    "number_of_pockets": 1,
+    "pockets": "consectetur pocket(s) velit pocket(s) enim pocket(s)"
+  },
+  {
+    "weight": "1621 g",
+    "weight_reference": "in size L",
+    "model_height": "220 cm",
+    "model_size": "M",
+    "sleeve_type": "quis laborum",
+    "number_of_pockets": 5,
+    "pockets": "ea pocket(s) non pocket(s) culpa pocket(s)"
+  },
+  {
+    "weight": "3338 g",
+    "weight_reference": "in size XS",
+    "model_height": "173 cm",
+    "model_size": "XS",
+    "sleeve_type": "est consequat",
+    "number_of_pockets": 6,
+    "pockets": "duis pocket(s) deserunt pocket(s) nostrud pocket(s)"
+  },
+  {
+    "weight": "3053 g",
+    "weight_reference": "in size S",
+    "model_height": "212 cm",
+    "model_size": "S",
+    "sleeve_type": "cillum nulla",
+    "number_of_pockets": 4,
+    "pockets": "amet pocket(s) cupidatat pocket(s) aute pocket(s)"
+  },
+  {
+    "weight": "2143 g",
+    "weight_reference": "in size XL",
+    "model_height": "184 cm",
+    "model_size": "M",
+    "sleeve_type": "laboris ullamco",
+    "number_of_pockets": 1,
+    "pockets": "mollit pocket(s) ipsum pocket(s) voluptate pocket(s)"
+  },
+  {
+    "weight": "2131 g",
+    "weight_reference": "in size XS",
+    "model_height": "155 cm",
+    "model_size": "S",
+    "sleeve_type": "exercitation irure",
+    "number_of_pockets": 2,
+    "pockets": "fugiat pocket(s) adipisicing pocket(s) est pocket(s)"
+  },
+  {
+    "weight": "1536 g",
+    "weight_reference": "in size XL",
+    "model_height": "211 cm",
+    "model_size": "M",
+    "sleeve_type": "quis ut",
+    "number_of_pockets": 2,
+    "pockets": "non pocket(s) culpa pocket(s) est pocket(s)"
+  },
+  {
+    "weight": "3299 g",
+    "weight_reference": "in size M",
+    "model_height": "151 cm",
+    "model_size": "XL",
+    "sleeve_type": "ea exercitation",
+    "number_of_pockets": 1,
+    "pockets": "ad pocket(s) veniam pocket(s) aute pocket(s)"
   },
   {
     "weight": "4872 g",
-    "weight_reference": "in size XS",
-    "model_height": "212 cm",
+    "weight_reference": "in size S",
+    "model_height": "146 cm",
     "model_size": "XS",
-    "number_of_pockets": 5,
-    "pockets": "aliquip pocket(s) irure pocket(s) tempor pocket(s)"
-  },
-  {
-    "weight": "1046 g",
-    "weight_reference": "in size XS",
-    "model_height": "161 cm",
-    "model_size": "XS",
+    "sleeve_type": "reprehenderit amet",
     "number_of_pockets": 2,
-    "pockets": "sunt pocket(s) mollit pocket(s) dolore pocket(s)"
+    "pockets": "cupidatat pocket(s) eiusmod pocket(s) tempor pocket(s)"
   },
   {
-    "weight": "2235 g",
-    "weight_reference": "in size M",
-    "model_height": "186 cm",
-    "model_size": "XS",
-    "number_of_pockets": 6,
-    "pockets": "irure pocket(s) minim pocket(s) anim pocket(s)"
-  },
-  {
-    "weight": "3177 g",
-    "weight_reference": "in size L",
-    "model_height": "148 cm",
-    "model_size": "M",
-    "number_of_pockets": 5,
-    "pockets": "consectetur pocket(s) nisi pocket(s) non pocket(s)"
-  },
-  {
-    "weight": "2639 g",
-    "weight_reference": "in size M",
-    "model_height": "189 cm",
-    "model_size": "M",
-    "number_of_pockets": 3,
-    "pockets": "eiusmod pocket(s) sunt pocket(s) minim pocket(s)"
-  },
-  {
-    "weight": "1607 g",
-    "weight_reference": "in size S",
-    "model_height": "164 cm",
-    "model_size": "M",
-    "number_of_pockets": 3,
-    "pockets": "officia pocket(s) dolore pocket(s) irure pocket(s)"
-  },
-  {
-    "weight": "1154 g",
-    "weight_reference": "in size L",
-    "model_height": "206 cm",
-    "model_size": "M",
-    "number_of_pockets": 5,
-    "pockets": "occaecat pocket(s) dolor pocket(s) veniam pocket(s)"
-  },
-  {
-    "weight": "3800 g",
-    "weight_reference": "in size S",
-    "model_height": "216 cm",
-    "model_size": "XL",
-    "number_of_pockets": 6,
-    "pockets": "sint pocket(s) dolore pocket(s) excepteur pocket(s)"
-  },
-  {
-    "weight": "1669 g",
-    "weight_reference": "in size XS",
-    "model_height": "218 cm",
+    "weight": "784 g",
+    "weight_reference": "in size XL",
+    "model_height": "215 cm",
     "model_size": "S",
+    "sleeve_type": "mollit qui",
+    "number_of_pockets": 2,
+    "pockets": "minim pocket(s) excepteur pocket(s) sint pocket(s)"
+  },
+  {
+    "weight": "4329 g",
+    "weight_reference": "in size XL",
+    "model_height": "203 cm",
+    "model_size": "XL",
+    "sleeve_type": "pariatur esse",
+    "number_of_pockets": 1,
+    "pockets": "id pocket(s) tempor pocket(s) incididunt pocket(s)"
+  },
+  {
+    "weight": "4494 g",
+    "weight_reference": "in size XL",
+    "model_height": "214 cm",
+    "model_size": "XL",
+    "sleeve_type": "laborum id",
+    "number_of_pockets": 2,
+    "pockets": "esse pocket(s) deserunt pocket(s) culpa pocket(s)"
+  },
+  {
+    "weight": "3645 g",
+    "weight_reference": "in size M",
+    "model_height": "188 cm",
+    "model_size": "M",
+    "sleeve_type": "consectetur do",
     "number_of_pockets": 5,
-    "pockets": "laborum pocket(s) veniam pocket(s) est pocket(s)"
+    "pockets": "non pocket(s) et pocket(s) proident pocket(s)"
   },
   {
-    "weight": "4292 g",
+    "weight": "3694 g",
+    "weight_reference": "in size XL",
+    "model_height": "200 cm",
+    "model_size": "L",
+    "sleeve_type": "ullamco minim",
+    "number_of_pockets": 1,
+    "pockets": "et pocket(s) labore pocket(s) laboris pocket(s)"
+  },
+  {
+    "weight": "1585 g",
+    "weight_reference": "in size M",
+    "model_height": "191 cm",
+    "model_size": "S",
+    "sleeve_type": "dolor est",
+    "number_of_pockets": 4,
+    "pockets": "labore pocket(s) est pocket(s) consectetur pocket(s)"
+  },
+  {
+    "weight": "3713 g",
+    "weight_reference": "in size XL",
+    "model_height": "148 cm",
+    "model_size": "S",
+    "sleeve_type": "esse nostrud",
+    "number_of_pockets": 3,
+    "pockets": "et pocket(s) ea pocket(s) mollit pocket(s)"
+  },
+  {
+    "weight": "4257 g",
     "weight_reference": "in size S",
-    "model_height": "178 cm",
-    "model_size": "XS",
-    "number_of_pockets": 6,
-    "pockets": "labore pocket(s) pariatur pocket(s) nisi pocket(s)"
+    "model_height": "168 cm",
+    "model_size": "S",
+    "sleeve_type": "mollit do",
+    "number_of_pockets": 3,
+    "pockets": "commodo pocket(s) dolore pocket(s) laboris pocket(s)"
   },
   {
-    "weight": "3324 g",
+    "weight": "3238 g",
     "weight_reference": "in size XS",
+    "model_height": "200 cm",
+    "model_size": "M",
+    "sleeve_type": "exercitation dolore",
+    "number_of_pockets": 5,
+    "pockets": "laboris pocket(s) nostrud pocket(s) et pocket(s)"
+  },
+  {
+    "weight": "3072 g",
+    "weight_reference": "in size XL",
+    "model_height": "142 cm",
+    "model_size": "XL",
+    "sleeve_type": "consequat irure",
+    "number_of_pockets": 3,
+    "pockets": "proident pocket(s) cillum pocket(s) amet pocket(s)"
+  },
+  {
+    "weight": "2555 g",
+    "weight_reference": "in size M",
+    "model_height": "208 cm",
+    "model_size": "L",
+    "sleeve_type": "ad Lorem",
+    "number_of_pockets": 5,
+    "pockets": "incididunt pocket(s) mollit pocket(s) consequat pocket(s)"
+  },
+  {
+    "weight": "3488 g",
+    "weight_reference": "in size XS",
+    "model_height": "215 cm",
+    "model_size": "XS",
+    "sleeve_type": "quis aute",
+    "number_of_pockets": 3,
+    "pockets": "esse pocket(s) tempor pocket(s) pariatur pocket(s)"
+  },
+  {
+    "weight": "3450 g",
+    "weight_reference": "in size XS",
+    "model_height": "168 cm",
+    "model_size": "S",
+    "sleeve_type": "sunt consequat",
+    "number_of_pockets": 2,
+    "pockets": "qui pocket(s) labore pocket(s) est pocket(s)"
+  },
+  {
+    "weight": "4731 g",
+    "weight_reference": "in size M",
+    "model_height": "199 cm",
+    "model_size": "XL",
+    "sleeve_type": "sit fugiat",
+    "number_of_pockets": 5,
+    "pockets": "officia pocket(s) labore pocket(s) anim pocket(s)"
+  },
+  {
+    "weight": "1183 g",
+    "weight_reference": "in size L",
     "model_height": "217 cm",
     "model_size": "L",
-    "number_of_pockets": 3,
-    "pockets": "labore pocket(s) elit pocket(s) minim pocket(s)"
+    "sleeve_type": "culpa qui",
+    "number_of_pockets": 6,
+    "pockets": "anim pocket(s) quis pocket(s) nisi pocket(s)"
   },
   {
-    "weight": "883 g",
-    "weight_reference": "in size S",
-    "model_height": "147 cm",
-    "model_size": "L",
-    "number_of_pockets": 4,
-    "pockets": "magna pocket(s) do pocket(s) incididunt pocket(s)"
-  },
-  {
-    "weight": "4937 g",
-    "weight_reference": "in size S",
-    "model_height": "188 cm",
-    "model_size": "L",
-    "number_of_pockets": 4,
-    "pockets": "nulla pocket(s) laborum pocket(s) ea pocket(s)"
-  },
-  {
-    "weight": "1013 g",
-    "weight_reference": "in size M",
-    "model_height": "216 cm",
-    "model_size": "XL",
+    "weight": "2515 g",
+    "weight_reference": "in size XS",
+    "model_height": "178 cm",
+    "model_size": "M",
+    "sleeve_type": "cillum ad",
     "number_of_pockets": 5,
-    "pockets": "anim pocket(s) anim pocket(s) exercitation pocket(s)"
+    "pockets": "Lorem pocket(s) elit pocket(s) ut pocket(s)"
   },
   {
-    "weight": "3579 g",
+    "weight": "1657 g",
     "weight_reference": "in size XL",
     "model_height": "210 cm",
     "model_size": "L",
-    "number_of_pockets": 1,
-    "pockets": "est pocket(s) voluptate pocket(s) id pocket(s)"
+    "sleeve_type": "incididunt cillum",
+    "number_of_pockets": 3,
+    "pockets": "non pocket(s) labore pocket(s) esse pocket(s)"
   },
   {
-    "weight": "865 g",
-    "weight_reference": "in size S",
-    "model_height": "194 cm",
-    "model_size": "S",
-    "number_of_pockets": 6,
-    "pockets": "Lorem pocket(s) consequat pocket(s) sunt pocket(s)"
+    "weight": "1718 g",
+    "weight_reference": "in size L",
+    "model_height": "183 cm",
+    "model_size": "L",
+    "sleeve_type": "deserunt occaecat",
+    "number_of_pockets": 2,
+    "pockets": "consectetur pocket(s) amet pocket(s) pariatur pocket(s)"
   },
   {
-    "weight": "4051 g",
+    "weight": "4201 g",
     "weight_reference": "in size XL",
-    "model_height": "171 cm",
-    "model_size": "S",
+    "model_height": "189 cm",
+    "model_size": "XL",
+    "sleeve_type": "enim dolore",
     "number_of_pockets": 5,
-    "pockets": "reprehenderit pocket(s) nulla pocket(s) est pocket(s)"
+    "pockets": "est pocket(s) veniam pocket(s) dolore pocket(s)"
   },
   {
-    "weight": "4041 g",
+    "weight": "4438 g",
+    "weight_reference": "in size XS",
+    "model_height": "181 cm",
+    "model_size": "L",
+    "sleeve_type": "exercitation qui",
+    "number_of_pockets": 3,
+    "pockets": "sit pocket(s) occaecat pocket(s) fugiat pocket(s)"
+  },
+  {
+    "weight": "3414 g",
+    "weight_reference": "in size M",
+    "model_height": "207 cm",
+    "model_size": "XS",
+    "sleeve_type": "magna excepteur",
+    "number_of_pockets": 3,
+    "pockets": "id pocket(s) in pocket(s) enim pocket(s)"
+  },
+  {
+    "weight": "4978 g",
+    "weight_reference": "in size L",
+    "model_height": "144 cm",
+    "model_size": "M",
+    "sleeve_type": "eu duis",
+    "number_of_pockets": 2,
+    "pockets": "laborum pocket(s) magna pocket(s) commodo pocket(s)"
+  },
+  {
+    "weight": "4891 g",
+    "weight_reference": "in size XS",
+    "model_height": "213 cm",
+    "model_size": "XL",
+    "sleeve_type": "ad do",
+    "number_of_pockets": 3,
+    "pockets": "deserunt pocket(s) consectetur pocket(s) deserunt pocket(s)"
+  },
+  {
+    "weight": "3218 g",
     "weight_reference": "in size XL",
+    "model_height": "159 cm",
+    "model_size": "XS",
+    "sleeve_type": "ullamco cillum",
+    "number_of_pockets": 6,
+    "pockets": "ex pocket(s) aliqua pocket(s) id pocket(s)"
+  },
+  {
+    "weight": "4680 g",
+    "weight_reference": "in size M",
+    "model_height": "160 cm",
+    "model_size": "XL",
+    "sleeve_type": "minim exercitation",
+    "number_of_pockets": 2,
+    "pockets": "in pocket(s) adipisicing pocket(s) eu pocket(s)"
+  },
+  {
+    "weight": "3656 g",
+    "weight_reference": "in size XL",
+    "model_height": "188 cm",
+    "model_size": "M",
+    "sleeve_type": "commodo dolor",
+    "number_of_pockets": 3,
+    "pockets": "laborum pocket(s) voluptate pocket(s) amet pocket(s)"
+  },
+  {
+    "weight": "1226 g",
+    "weight_reference": "in size XL",
+    "model_height": "202 cm",
+    "model_size": "XS",
+    "sleeve_type": "sint excepteur",
+    "number_of_pockets": 2,
+    "pockets": "esse pocket(s) irure pocket(s) velit pocket(s)"
+  },
+  {
+    "weight": "2321 g",
+    "weight_reference": "in size L",
+    "model_height": "167 cm",
+    "model_size": "M",
+    "sleeve_type": "exercitation est",
+    "number_of_pockets": 3,
+    "pockets": "nostrud pocket(s) fugiat pocket(s) anim pocket(s)"
+  },
+  {
+    "weight": "838 g",
+    "weight_reference": "in size L",
+    "model_height": "164 cm",
+    "model_size": "M",
+    "sleeve_type": "nostrud anim",
+    "number_of_pockets": 2,
+    "pockets": "nostrud pocket(s) consectetur pocket(s) do pocket(s)"
+  },
+  {
+    "weight": "4993 g",
+    "weight_reference": "in size XS",
+    "model_height": "188 cm",
+    "model_size": "XS",
+    "sleeve_type": "cillum exercitation",
+    "number_of_pockets": 4,
+    "pockets": "sit pocket(s) labore pocket(s) elit pocket(s)"
+  },
+  {
+    "weight": "3891 g",
+    "weight_reference": "in size S",
+    "model_height": "191 cm",
+    "model_size": "L",
+    "sleeve_type": "fugiat non",
+    "number_of_pockets": 3,
+    "pockets": "consectetur pocket(s) adipisicing pocket(s) Lorem pocket(s)"
+  },
+  {
+    "weight": "643 g",
+    "weight_reference": "in size XS",
+    "model_height": "212 cm",
+    "model_size": "XS",
+    "sleeve_type": "est id",
+    "number_of_pockets": 4,
+    "pockets": "et pocket(s) commodo pocket(s) mollit pocket(s)"
+  },
+  {
+    "weight": "2609 g",
+    "weight_reference": "in size L",
+    "model_height": "173 cm",
+    "model_size": "M",
+    "sleeve_type": "eu anim",
+    "number_of_pockets": 6,
+    "pockets": "tempor pocket(s) cupidatat pocket(s) pariatur pocket(s)"
+  },
+  {
+    "weight": "2780 g",
+    "weight_reference": "in size S",
+    "model_height": "198 cm",
+    "model_size": "XS",
+    "sleeve_type": "anim deserunt",
+    "number_of_pockets": 4,
+    "pockets": "non pocket(s) enim pocket(s) non pocket(s)"
+  },
+  {
+    "weight": "3620 g",
+    "weight_reference": "in size S",
+    "model_height": "198 cm",
+    "model_size": "M",
+    "sleeve_type": "in veniam",
+    "number_of_pockets": 6,
+    "pockets": "anim pocket(s) veniam pocket(s) quis pocket(s)"
+  },
+  {
+    "weight": "1135 g",
+    "weight_reference": "in size S",
+    "model_height": "176 cm",
+    "model_size": "M",
+    "sleeve_type": "nulla tempor",
+    "number_of_pockets": 6,
+    "pockets": "aute pocket(s) officia pocket(s) laborum pocket(s)"
+  },
+  {
+    "weight": "4721 g",
+    "weight_reference": "in size XL",
+    "model_height": "167 cm",
+    "model_size": "L",
+    "sleeve_type": "sunt ullamco",
+    "number_of_pockets": 6,
+    "pockets": "ipsum pocket(s) veniam pocket(s) consequat pocket(s)"
+  },
+  {
+    "weight": "1319 g",
+    "weight_reference": "in size M",
+    "model_height": "169 cm",
+    "model_size": "XL",
+    "sleeve_type": "culpa duis",
+    "number_of_pockets": 6,
+    "pockets": "labore pocket(s) elit pocket(s) veniam pocket(s)"
+  },
+  {
+    "weight": "4423 g",
+    "weight_reference": "in size XL",
+    "model_height": "151 cm",
+    "model_size": "XL",
+    "sleeve_type": "consequat commodo",
+    "number_of_pockets": 6,
+    "pockets": "excepteur pocket(s) est pocket(s) aliqua pocket(s)"
+  },
+  {
+    "weight": "4215 g",
+    "weight_reference": "in size XS",
+    "model_height": "203 cm",
+    "model_size": "XL",
+    "sleeve_type": "ex culpa",
+    "number_of_pockets": 4,
+    "pockets": "exercitation pocket(s) officia pocket(s) qui pocket(s)"
+  },
+  {
+    "weight": "1631 g",
+    "weight_reference": "in size S",
+    "model_height": "161 cm",
+    "model_size": "XS",
+    "sleeve_type": "et aliqua",
+    "number_of_pockets": 4,
+    "pockets": "dolor pocket(s) sit pocket(s) id pocket(s)"
+  },
+  {
+    "weight": "4926 g",
+    "weight_reference": "in size L",
+    "model_height": "175 cm",
+    "model_size": "S",
+    "sleeve_type": "aute aliquip",
+    "number_of_pockets": 2,
+    "pockets": "velit pocket(s) qui pocket(s) ex pocket(s)"
+  },
+  {
+    "weight": "742 g",
+    "weight_reference": "in size XL",
+    "model_height": "189 cm",
+    "model_size": "M",
+    "sleeve_type": "consectetur magna",
+    "number_of_pockets": 5,
+    "pockets": "mollit pocket(s) veniam pocket(s) ad pocket(s)"
+  },
+  {
+    "weight": "4540 g",
+    "weight_reference": "in size M",
+    "model_height": "159 cm",
+    "model_size": "L",
+    "sleeve_type": "laborum aliqua",
+    "number_of_pockets": 5,
+    "pockets": "dolor pocket(s) laboris pocket(s) et pocket(s)"
+  },
+  {
+    "weight": "1943 g",
+    "weight_reference": "in size M",
+    "model_height": "152 cm",
+    "model_size": "XL",
+    "sleeve_type": "non consequat",
+    "number_of_pockets": 1,
+    "pockets": "nisi pocket(s) aliquip pocket(s) labore pocket(s)"
+  },
+  {
+    "weight": "3489 g",
+    "weight_reference": "in size XS",
     "model_height": "197 cm",
     "model_size": "M",
-    "number_of_pockets": 5,
-    "pockets": "nulla pocket(s) veniam pocket(s) proident pocket(s)"
-  },
-  {
-    "weight": "4185 g",
-    "weight_reference": "in size S",
-    "model_height": "207 cm",
-    "model_size": "M",
-    "number_of_pockets": 2,
-    "pockets": "velit pocket(s) duis pocket(s) occaecat pocket(s)"
-  },
-  {
-    "weight": "1048 g",
-    "weight_reference": "in size XS",
-    "model_height": "164 cm",
-    "model_size": "L",
-    "number_of_pockets": 1,
-    "pockets": "laboris pocket(s) et pocket(s) nulla pocket(s)"
-  },
-  {
-    "weight": "4279 g",
-    "weight_reference": "in size S",
-    "model_height": "214 cm",
-    "model_size": "XL",
+    "sleeve_type": "quis tempor",
     "number_of_pockets": 6,
-    "pockets": "nulla pocket(s) consectetur pocket(s) sint pocket(s)"
+    "pockets": "dolor pocket(s) ut pocket(s) anim pocket(s)"
   },
   {
-    "weight": "3025 g",
+    "weight": "1902 g",
     "weight_reference": "in size S",
-    "model_height": "153 cm",
-    "model_size": "M",
-    "number_of_pockets": 3,
-    "pockets": "irure pocket(s) fugiat pocket(s) est pocket(s)"
+    "model_height": "143 cm",
+    "model_size": "S",
+    "sleeve_type": "ullamco velit",
+    "number_of_pockets": 4,
+    "pockets": "qui pocket(s) deserunt pocket(s) veniam pocket(s)"
   },
   {
-    "weight": "2744 g",
-    "weight_reference": "in size S",
-    "model_height": "217 cm",
-    "model_size": "M",
+    "weight": "1189 g",
+    "weight_reference": "in size L",
+    "model_height": "201 cm",
+    "model_size": "S",
+    "sleeve_type": "consectetur ex",
     "number_of_pockets": 2,
-    "pockets": "laboris pocket(s) laborum pocket(s) ex pocket(s)"
+    "pockets": "voluptate pocket(s) id pocket(s) fugiat pocket(s)"
   },
   {
-    "weight": "4496 g",
+    "weight": "4309 g",
+    "weight_reference": "in size XS",
+    "model_height": "196 cm",
+    "model_size": "S",
+    "sleeve_type": "veniam ullamco",
+    "number_of_pockets": 3,
+    "pockets": "magna pocket(s) id pocket(s) ex pocket(s)"
+  },
+  {
+    "weight": "3338 g",
+    "weight_reference": "in size XL",
+    "model_height": "218 cm",
+    "model_size": "XL",
+    "sleeve_type": "velit tempor",
+    "number_of_pockets": 3,
+    "pockets": "eu pocket(s) dolor pocket(s) minim pocket(s)"
+  },
+  {
+    "weight": "3755 g",
+    "weight_reference": "in size XL",
+    "model_height": "153 cm",
+    "model_size": "XL",
+    "sleeve_type": "Lorem fugiat",
+    "number_of_pockets": 1,
+    "pockets": "commodo pocket(s) anim pocket(s) duis pocket(s)"
+  },
+  {
+    "weight": "4586 g",
     "weight_reference": "in size M",
-    "model_height": "158 cm",
-    "model_size": "XS",
-    "number_of_pockets": 5,
-    "pockets": "irure pocket(s) consectetur pocket(s) qui pocket(s)"
+    "model_height": "217 cm",
+    "model_size": "XL",
+    "sleeve_type": "elit et",
+    "number_of_pockets": 1,
+    "pockets": "sint pocket(s) ut pocket(s) et pocket(s)"
   },
   {
-    "weight": "1821 g",
+    "weight": "974 g",
+    "weight_reference": "in size XL",
+    "model_height": "187 cm",
+    "model_size": "M",
+    "sleeve_type": "nulla velit",
+    "number_of_pockets": 3,
+    "pockets": "officia pocket(s) laborum pocket(s) ex pocket(s)"
+  },
+  {
+    "weight": "3659 g",
+    "weight_reference": "in size S",
+    "model_height": "206 cm",
+    "model_size": "L",
+    "sleeve_type": "eiusmod laborum",
+    "number_of_pockets": 1,
+    "pockets": "eiusmod pocket(s) aliqua pocket(s) ullamco pocket(s)"
+  },
+  {
+    "weight": "2380 g",
     "weight_reference": "in size XS",
     "model_height": "206 cm",
+    "model_size": "L",
+    "sleeve_type": "anim culpa",
+    "number_of_pockets": 1,
+    "pockets": "velit pocket(s) consectetur pocket(s) nisi pocket(s)"
+  },
+  {
+    "weight": "4366 g",
+    "weight_reference": "in size S",
+    "model_height": "157 cm",
     "model_size": "XL",
+    "sleeve_type": "duis minim",
     "number_of_pockets": 3,
-    "pockets": "deserunt pocket(s) id pocket(s) cupidatat pocket(s)"
+    "pockets": "ipsum pocket(s) minim pocket(s) ad pocket(s)"
   },
   {
-    "weight": "2641 g",
-    "weight_reference": "in size XS",
-    "model_height": "217 cm",
-    "model_size": "S",
-    "number_of_pockets": 5,
-    "pockets": "duis pocket(s) irure pocket(s) elit pocket(s)"
-  },
-  {
-    "weight": "1788 g",
-    "weight_reference": "in size XL",
-    "model_height": "150 cm",
+    "weight": "1401 g",
+    "weight_reference": "in size M",
+    "model_height": "176 cm",
     "model_size": "XL",
+    "sleeve_type": "enim in",
     "number_of_pockets": 5,
-    "pockets": "quis pocket(s) adipisicing pocket(s) cillum pocket(s)"
+    "pockets": "fugiat pocket(s) in pocket(s) laborum pocket(s)"
+  },
+  {
+    "weight": "613 g",
+    "weight_reference": "in size L",
+    "model_height": "147 cm",
+    "model_size": "L",
+    "sleeve_type": "aliquip fugiat",
+    "number_of_pockets": 2,
+    "pockets": "adipisicing pocket(s) magna pocket(s) ex pocket(s)"
+  },
+  {
+    "weight": "1035 g",
+    "weight_reference": "in size S",
+    "model_height": "167 cm",
+    "model_size": "M",
+    "sleeve_type": "Lorem laboris",
+    "number_of_pockets": 2,
+    "pockets": "officia pocket(s) nulla pocket(s) sint pocket(s)"
+  },
+  {
+    "weight": "783 g",
+    "weight_reference": "in size XS",
+    "model_height": "155 cm",
+    "model_size": "M",
+    "sleeve_type": "adipisicing dolor",
+    "number_of_pockets": 3,
+    "pockets": "ad pocket(s) irure pocket(s) laboris pocket(s)"
+  },
+  {
+    "weight": "1152 g",
+    "weight_reference": "in size M",
+    "model_height": "201 cm",
+    "model_size": "L",
+    "sleeve_type": "qui officia",
+    "number_of_pockets": 4,
+    "pockets": "laborum pocket(s) minim pocket(s) ipsum pocket(s)"
+  },
+  {
+    "weight": "1618 g",
+    "weight_reference": "in size M",
+    "model_height": "207 cm",
+    "model_size": "L",
+    "sleeve_type": "amet deserunt",
+    "number_of_pockets": 3,
+    "pockets": "officia pocket(s) velit pocket(s) ea pocket(s)"
+  },
+  {
+    "weight": "2482 g",
+    "weight_reference": "in size S",
+    "model_height": "186 cm",
+    "model_size": "XS",
+    "sleeve_type": "non officia",
+    "number_of_pockets": 3,
+    "pockets": "laboris pocket(s) fugiat pocket(s) aliqua pocket(s)"
+  },
+  {
+    "weight": "3686 g",
+    "weight_reference": "in size XL",
+    "model_height": "169 cm",
+    "model_size": "XL",
+    "sleeve_type": "culpa tempor",
+    "number_of_pockets": 1,
+    "pockets": "ullamco pocket(s) qui pocket(s) sint pocket(s)"
+  },
+  {
+    "weight": "3607 g",
+    "weight_reference": "in size XS",
+    "model_height": "199 cm",
+    "model_size": "XS",
+    "sleeve_type": "pariatur consectetur",
+    "number_of_pockets": 4,
+    "pockets": "aliquip pocket(s) do pocket(s) deserunt pocket(s)"
+  },
+  {
+    "weight": "2769 g",
+    "weight_reference": "in size S",
+    "model_height": "211 cm",
+    "model_size": "XS",
+    "sleeve_type": "occaecat adipisicing",
+    "number_of_pockets": 6,
+    "pockets": "deserunt pocket(s) eiusmod pocket(s) qui pocket(s)"
+  },
+  {
+    "weight": "1131 g",
+    "weight_reference": "in size S",
+    "model_height": "204 cm",
+    "model_size": "L",
+    "sleeve_type": "dolor cillum",
+    "number_of_pockets": 5,
+    "pockets": "fugiat pocket(s) reprehenderit pocket(s) incididunt pocket(s)"
+  },
+  {
+    "weight": "3034 g",
+    "weight_reference": "in size L",
+    "model_height": "198 cm",
+    "model_size": "XS",
+    "sleeve_type": "ut irure",
+    "number_of_pockets": 1,
+    "pockets": "consequat pocket(s) ad pocket(s) elit pocket(s)"
+  },
+  {
+    "weight": "1657 g",
+    "weight_reference": "in size XL",
+    "model_height": "217 cm",
+    "model_size": "M",
+    "sleeve_type": "eiusmod do",
+    "number_of_pockets": 3,
+    "pockets": "consequat pocket(s) do pocket(s) tempor pocket(s)"
+  },
+  {
+    "weight": "2372 g",
+    "weight_reference": "in size XL",
+    "model_height": "161 cm",
+    "model_size": "L",
+    "sleeve_type": "voluptate sit",
+    "number_of_pockets": 4,
+    "pockets": "dolor pocket(s) magna pocket(s) elit pocket(s)"
+  },
+  {
+    "weight": "3781 g",
+    "weight_reference": "in size XS",
+    "model_height": "207 cm",
+    "model_size": "XS",
+    "sleeve_type": "mollit amet",
+    "number_of_pockets": 2,
+    "pockets": "nisi pocket(s) officia pocket(s) in pocket(s)"
+  },
+  {
+    "weight": "1862 g",
+    "weight_reference": "in size L",
+    "model_height": "171 cm",
+    "model_size": "L",
+    "sleeve_type": "amet minim",
+    "number_of_pockets": 5,
+    "pockets": "tempor pocket(s) et pocket(s) ea pocket(s)"
+  },
+  {
+    "weight": "4212 g",
+    "weight_reference": "in size M",
+    "model_height": "152 cm",
+    "model_size": "L",
+    "sleeve_type": "reprehenderit nulla",
+    "number_of_pockets": 5,
+    "pockets": "pariatur pocket(s) laborum pocket(s) ea pocket(s)"
   }
 ]

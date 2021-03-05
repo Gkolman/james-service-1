@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+  box-sizing: border-box;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,18 +64,48 @@ table {
   border-spacing: 0;
 }
 
+@font-face{
+font-family: frankfurter;
+src: url('./fonts/Frankfurter\ Std\ Regular.otf'),
+}
+
+@font-face {
+  font-family: vagroundedbold;
+  src: url('./fonts/VAG\ Rounded\ Bold.ttf');
+}
+
+@font-face {
+  font-family: vagroundedregular;
+  src: url('./fonts/VAG\ Rounded\ Regular.ttf');
+}
+
+@font-face {font-family: "VAGRundschriftW01-Light"; src: url("//db.onlinewebfonts.com/t/80b18e00beeec93387dad02fcc90d655.eot"); src: url("//db.onlinewebfonts.com/t/80b18e00beeec93387dad02fcc90d655.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/80b18e00beeec93387dad02fcc90d655.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/80b18e00beeec93387dad02fcc90d655.woff") format("woff"), url("//db.onlinewebfonts.com/t/80b18e00beeec93387dad02fcc90d655.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/80b18e00beeec93387dad02fcc90d655.svg#VAGRundschriftW01-Light") format("svg"); }
+
 :root {
   --fontWeightOne: 700;
 }
 
+$sample-breakpoint: 500px;
+
+@mixin font-maker($fontSize: inherit, $lineHeight: inherit, $color: inherit, $fontFamily: inherit) {
+  line-height: $lineHeight;
+  font-size: $fontSize;
+  color: $color;
+  font-family: #{$fontFamily};
+}
+
+@mixin padding-margin($padding: inherit, $margin: inherit) {
+  padding: #{$padding};
+  margin: #{$margin};
+}
+
 body {
   background-color: #f4f4f4;
-  color: #303030;
-  font-family: Artic Fox\ 08,sans-serif;
-  font-size: 14px;
   letter-spacing: .03em;
-  line-height: 1.5;
   text-rendering: geometricPrecision;
+  display: block;
+  @include font-maker(14px, 1.5, #303030, vagroundedregular);
+  font-weight: 100;
 }
 
 li {
@@ -96,47 +129,68 @@ h2:first-child {
 .teaserRoot {
   padding: 0 20px;
   position: relative;
-  border: 1px solid black;
+  &:first-child {
+    margin-top: 50px;
+  }
+  @media only screen and (min-width: 992px) {
+    max-width: 1024px;
+    padding: 0 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media only screen and (min-width: 1300px) {
+    max-width: 1235px;
+  }
 }
 
 .teaserRoot {
+  .featuresTitle {
+    display: block;
+    @include font-maker(14px, 21px);
+    font-weight: var(--fontWeightOne);
+    text-transform: uppercase;
+  }
   .shortDescription {
-    font-size: 24px;
-    line-height: 36px;
+    @include font-maker(24px, 36px);
     margin-top: 5px;
     display: block;
-    background-color: purple;
   }
 }
 
-#productFeatures {
+*+.teaserRoot {
+  margin-top: 30px;
+  @media only screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+  @media only screen and (min-width: 992px) {
+    margin-top: 80px;
+  }
+
+}
+
+.featuresRoot {
   margin-top: 50px;
-  background-color: lime;
   .featuresDescription {
-    margin: 0;
-    padding: 0 0 30px;
-    background-color: orange;
+    @include padding-margin('0 0 30px', 0);
   }
   .features {
-    padding: 0;
-    margin-top: 15px;
+    @include padding-margin(0, '15px 0 0 0');
     list-style: none;
     li {
       position: relative;
-      padding-left: 20px;
-      margin-top: 15px;
-    }
-     &li:before {
-      position: absolute;
-      top: 7px;
-      left: 0;
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      margin: 2px 15px 2px 0;
-      background-color: #959595;
-      border-radius: 50%;
-      content: "";
+      @include padding-margin('0 0 0 20px', '15px 0 0 0');
+      &:before {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin: 2px 15px 2px 0;
+        background-color: #959595;
+        border-radius: 50%;
+        content: "";
+      }
     }
   }
 }
@@ -147,31 +201,58 @@ h2:first-child {
     padding: 20px 0;
     display: block;
     font-weight: var(--fontWeightOne);
-    background-color: red;
+    @include font-maker(14px, 21px, inherit)
+    // background-color: red;
   }
   .descriptionContent {
     padding: 0 0 50px;
     border-bottom: 1px solid #d6d6d6;
-    background-color: lightblue;
+    @media only screen and (min-width: 992px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    // background-color: lightblue;
   }
-  .descriptionSpec, .descriptionText .descriptionItem {
+  .descriptionSpec, .descriptionText, .descriptionItem {
     line-height: 28px;
-    background-color: lightpink;
+    // background-color: lightpink;
   }
 }
-
-
 
 .descriptionRoot {
   border-top: 1px solid #d6d6d6;
 }
 
 .description .descriptionText {
+  font-size: 14px;
   line-height: 22px;
 }
 
 .descriptionSpec {
-  margin-top: 20px;
+  @media only screen and (min-width: 992px) {
+    padding-left: 20px;
+    }
+}
+
+
+
+.description {
+  @media only screen and (min-width: 992px) {
+    padding-right: 20px;
+  }
+}
+
+.description, .descriptionSpec {
+  @media only screen and (min-width: 992px) {
+  width: 50%;
+  }
+}
+
+.description {
+  @media only screen and (min-width: 992px) {
+  padding-right: 20px;
+  }
 }
 
 .pdpArea {
@@ -207,9 +288,7 @@ h2:first-child {
         font-size: 30px;
       }
       .articleExcerpt {
-        font-size: 20px;
-        line-height: 28px;
-        font-family: 'Adobe Caslon W01,serif';
+        @include font-maker(20px, 28px, inherit, 'Adobe Caslon W01,serif',)
       }
     };
   }
@@ -219,14 +298,13 @@ h2:first-child {
   text-align: left;
   background-color: #e8e7e6;
   .footerContainer {
+  @include padding-margin('0 0 0 400px', '0 auto');
   max-width: 1185px;
-  padding: 0 0 0 400px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
   position: relative;
-  margin: 0 auto;
   .footerColumn {
     display: flex;
     flex-direction: column;
@@ -242,9 +320,7 @@ h2:first-child {
       user-select: none;
     }
     .footerLinks {
-      padding: 0;
-      margin:  0;
-      margin-top: 10px;
+      @include padding-margin(0, '10px 0 0 0')
       list-style: none;
       .footerLink {
         padding: 0;
@@ -263,4 +339,15 @@ h2:first-child {
     }
     }
   }
+};
+
+
+#product-features #product-description .description--specification {
+  @media only screen and (max-width: 991px) {
+    margin-top: 20px;
+  }
+}
+
+#productFeatures>*+.descriptionRoot:not(#productDescription) {
+  margin-top: 0;
 }
