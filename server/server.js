@@ -20,6 +20,8 @@ app.use((req, res, next) => {
   res.header('Cross-Origin-Opener-Policy', 'same-origin')
   next();
 })
+
+
 app.use(express.static(__dirname + '/../client/dist'));
 
 app.use('/', router);

@@ -1,7 +1,7 @@
 // https://www.fjallraven.com/us/en-us/men/jackets/outdoor-jackets/skogso-padded-jacket-m?v=F82279%3a%3a7323450536367
 module.exports = fakeData = {
-  productDetails: `Lightweight and convenient winter jacket in G-1000 with synthetic padding that keeps warmth in even when damp. Fixed, snug-fitting hood, several practical pockets and easily gripped details.`,
-  productFeatures:
+  product_details: `Lightweight and convenient winter jacket in G-1000 with synthetic padding that keeps warmth in even when damp. Fixed, snug-fitting hood, several practical pockets and easily gripped details.`,
+  product_features:
     [
       `Lightly padded jacket in G-1000 Original filled with G-Loft Supreme.`,
       `Hip length with articulated cut and pre-shaped sleeves.`,
@@ -27,9 +27,6 @@ module.exports = fakeData = {
     { material: `G1000 Original: 65% polyester, 35% cotton` },
     { lining: `100% polyamide` },
     { filling: `G-Loft Supreme: 100% polyester` },
-    { fill_power: undefined },
-    { fill_weight: `145 g/m2` },
-    { reinforcement_areas: undefined },
     { legal_notice: `Contains non-textile elements of animal origin.` }
   ],
   technical_details: [
@@ -61,3 +58,47 @@ module.exports = fakeData = {
     { text: `This product uses Fjällräven G-1000, our own hardwearing outdoor fabric that together with timeless design, creates products that are able to stay in use for many, many years. That’s sustainability through longevity.` },
   ]
 }
+
+// {
+//   product_details: string,
+//     product_features: [string, string, string, string, string, string],
+//       product_description: [
+//         [
+//           { product_description: string },
+//         ], [
+//           { article_number: string },
+//           { family: string },
+//           { gender: string },
+//           { environmental_information: string },
+//           { features: string }
+//         ]
+//       ]
+//   Material_specification: [
+//     { material: string },
+//     { lining: string },
+//     { filling: string },
+//     { legal_notice string }
+//   ],
+//     technical_details: [
+//       [
+//         { weight: string },
+//         { weight_reference: string },
+//         { model_height: string },
+//         { model_size: string },
+//       ], [
+//         { clothing_layer: string },
+//         { number_of_pockets: number },
+//         { pockets: string }
+//       ]
+//     ],
+//       care_instructions: [
+//         [
+//           { washing: string },
+//           { dry_cleaning: string },
+//           { bleaching: string },
+//           { ironing: string },
+//         ], [
+//           { additional_care_instructions: string }
+//         ]
+//       ]
+// }
