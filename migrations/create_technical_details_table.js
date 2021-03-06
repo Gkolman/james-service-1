@@ -24,6 +24,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: true
       },
+      sleeve_type: {
+        type: Sequelize.STRING,
+        allowNull: true
+      },
       number_of_pockets: {
         type: Sequelize.INTEGER,
         allowNull: true

@@ -85,7 +85,7 @@ src: url('./fonts/Frankfurter\ Std\ Regular.otf'),
   --fontWeightOne: 700;
 }
 
-$sample-breakpoint: 500px;
+$screenBreakPoint: 992px;
 
 @mixin font-maker($fontSize: inherit, $lineHeight: inherit, $color: inherit, $fontFamily: inherit) {
   line-height: $lineHeight;
@@ -132,7 +132,7 @@ h2:first-child {
   &:first-child {
     margin-top: 50px;
   }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: $screenBreakPoint) {
     max-width: 1024px;
     padding: 0 25px;
     margin-left: auto;
@@ -162,7 +162,7 @@ h2:first-child {
   @media only screen and (min-width: 768px) {
     margin-top: 40px;
   }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: $screenBreakPoint) {
     margin-top: 80px;
   }
 
@@ -229,29 +229,21 @@ h2:first-child {
   line-height: 22px;
 }
 
-.descriptionSpec {
-  @media only screen and (min-width: 992px) {
-    padding-left: 20px;
-    }
-}
-
-
-
 .description {
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: $screenBreakPoint) {
     padding-right: 20px;
   }
 }
 
-.description, .descriptionSpec {
-  @media only screen and (min-width: 992px) {
-  width: 50%;
-  }
+.descriptionSpec {
+  @media only screen and (min-width: $screenBreakPoint) {
+    padding-left: 20px;
+    }
 }
 
-.description {
-  @media only screen and (min-width: 992px) {
-  padding-right: 20px;
+.description, .descriptionSpec {
+  @media only screen and (min-width: $screenBreakPoint) {
+  width: 50%;
   }
 }
 
@@ -343,7 +335,7 @@ h2:first-child {
 
 
 #product-features #product-description .description--specification {
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: $screenBreakPoint) {
     margin-top: 20px;
   }
 }

@@ -1,37 +1,40 @@
 module.exports = (sequelize, DataTypes) => {
-  const ProductFeatures = sequelize.define('product_features', {
-    featureOne: {
+  const TechnicalDetails = sequelize.define('technical_details', {
+    weight: {
       type: DataTypes.STRING,
       allowNull: true,
       unique: false,
     },
-    featureTwo: {
+    weight_reference: {
       type: DataTypes.STRING,
       allowNull: true,
       unique: false,
     },
-    featureThree: {
+    model_height: {
       type: DataTypes.STRING,
       allowNull: true,
       unique: false,
     },
-    featureFour: {
+    model_size: {
       type: DataTypes.STRING,
       allowNull: true,
       unique: false,
     },
-    featureFive: {
+    sleeve_type: {
       type: DataTypes.STRING,
       allowNull: true,
       unique: false,
     },
-    featureSix: {
+    number_of_pockets: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      unique: false,
+    },
+    pockets: {
       type: DataTypes.STRING,
       allowNull: true,
       unique: false,
-    }
-  }, {})
-
-  return ProductFeatures;
-};
-
+    },
+  })
+  return TechnicalDetails;
+}

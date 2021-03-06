@@ -6,8 +6,16 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { model: 'product_details', key: 'id' },
       },
+      // One to One relationship - https://siddharth-lakhara.medium.com/understanding-sequelize-associations-part-1-one-to-one-1-1-mapping-897ce176caf9
+      // productId: {
+      //   type: Sequelize.INTEGER,
+      //   references: { model: 'product_details', key: 'id' },
+      //   autoIncrement: true,
+      //   onDelete: 'CASCADE',
+      // },
       washing: {
         type: Sequelize.STRING,
         allowNull: true
