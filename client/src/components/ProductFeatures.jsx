@@ -14,7 +14,7 @@ const ProductFeatures = (props) => {
             <ul className={style.features}>
               {currentComponentDetails.map((feature, index) => {
                 return feature ?
-                  <li key={index}>{feature}</li> : null;
+                  <li key={index} className={style.featuresLi}>{feature}</li> : null;
               })}
             </ul>
           </div>

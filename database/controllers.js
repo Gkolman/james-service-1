@@ -31,7 +31,7 @@ const access = {
       ],
     });
 
-    console.log(results.dataValues);
+    // console.log(results.dataValues);
     return results;
   }
 }

@@ -10,7 +10,7 @@
   "scripts": {
     "start": "nodemon ./server/server.js",
     "build": "webpack --watch",
-    "test": "mocha --require @babel/register ./client/tests --recursive",
+    "test": "mocha --require ignore-styles --require @babel/register ./client/tests --recursive",
     "dev": "webpack serve",
     "prod": "webpack --mode=production"
   },
@@ -19,6 +19,7 @@
     "axios": "^0.21.1",
     "chai": "*",
     "cors": "^2.8.5",
+    "css-modules-require-hook": "^4.2.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
@@ -36,9 +37,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.13.1",
-    "@babel/preset-env": "^7.13.5",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
     "@babel/preset-react": "^7.12.13",
     "@babel/register": "^7.13.0",
+    "@babel/runtime": "^7.13.10",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.1.0",
@@ -46,6 +49,7 @@
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.2.0",
+    "ignore-styles": "^5.0.1",
     "jsdom": "16.4.0",
     "jsdom-global": "3.0.2",
     "mocha": "^8.3.0",

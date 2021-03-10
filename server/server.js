@@ -5,6 +5,9 @@ const path = require('path');
 const router = require('./routes.js');
 const cors = require('cors');
 
+app.use(cors());
+app.use('/', express.json());
+
 app.use('/', (req, res, next) => {
   if (req.originalUrl !== '/disable_hmr_logs.js' && req.originalUrl !== '/proxy' && req.originalUrl !== '/') {
     console.log(req.method, req.originalUrl);

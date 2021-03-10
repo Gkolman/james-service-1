@@ -4,7 +4,6 @@ const ProductDescription = (props) => {
   const { style, currentComponentDetails, material_specification, careInstructions, selector, descriptor } = props;
 
   const { teaserRoot, descriptionRoot, descriptionTitle, descriptionContent, description, descriptionText, descriptionSpec, descriptionItem, descriptionItemLabel, descriptionInfo, materialSpecification } = style;
-
   let currentRootId = selector.split(' ');
   currentRootId[1] = currentRootId[1][0].toUpperCase() + currentRootId[1].slice(1);
   currentRootId = currentRootId.join('');
@@ -24,8 +23,10 @@ const ProductDescription = (props) => {
                     const value = Object.values(item)[0];
                     let title = Object.keys(item)[0];
                     if (title !== undefined) {
-                      title = title.replaceAll('_', ' ');
+                      title = title.replace(/_/g, " ");
                       title = `${title[0].toUpperCase()}${title.slice(1)}: `;
+
+
                     }
                     return value !== undefined ?
                       (<span key={index} className={descriptionItem}>
@@ -47,7 +48,7 @@ const ProductDescription = (props) => {
                       const value = Object.values(item)[0];
                       let title = Object.keys(item)[0];
                       if (title !== undefined) {
-                        title = title.replaceAll('_', ' ');
+                        title = title.replace(/_/g, ' ');
                         title = `${title[0].toUpperCase()}${title.slice(1)}: `;
                       }
                       return value !== undefined ?
@@ -72,12 +73,11 @@ const ProductDescription = (props) => {
             <p className={descriptionText}>
               {
                 currentComponentDetails[1].map((item, index, arr) => {
-                  console.log(item);
                   // if (selector === 'product description') {
                   const value = Object.values(item)[0];
                   let title = Object.keys(item)[0];
                   if (title !== undefined) {
-                    title = title.replaceAll('_', ' ');
+                    title = title.replace(/_/g, ' ');
                     title = `${title[0].toUpperCase()}${title.slice(1)}: `;
                   }
                   return value !== undefined ?

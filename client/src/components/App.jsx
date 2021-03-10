@@ -12,7 +12,7 @@ import style from '../app.scss';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {};
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -21,7 +21,7 @@ class App extends React.Component {
     const [input] = event.target.children;
     const config = {
       method: `GET`,
-      url: `http://localhost:9000/fake_data/${input.value}`
+      url: `http://localhost:9000/${input.value}`
     }
     if (input.value > 0 && input.value <= 100) {
       return axios(config)
@@ -33,45 +33,52 @@ class App extends React.Component {
     }
   }
 
-  componentDidMount() {
+  async componentDidMount() {
+    const productId = window.location.href.split('/').filter((item) => { return Number(item) }).join('') || 1;
+
     const config = {
       method: 'GET',
-      url: 'http://localhost:9000/fake_data/10',
+      url: `http://localhost:9000/${productId}`,
+      params: {
+        indicator: 'true'
+      }
     }
 
-    return axios(config)
-      .then((results) => {
-        // console.log(results.data)
-        this.setState({
-          ...results.data
-        })
-      })
+    const results = await axios(config)
+    this.setState({
+      ...results.data
+    })
   }
 
   render() {
     const { productFeatures, product_description, material_specification, technical_details, careInstructions } = this.state;
-    const components = Object.entries(this.state);
+    let components = Object.entries(this.state);
     let descriptor;
     if (product_description) {
       descriptor = Object.values(product_description[0]).join('');
     }
-    return (
-      <div id={style.productFeatures}>
-        <CurrentProduct handleSubmit={this.handleSubmit}/>
-        {components.map((component, index) => {
-          if (component[0] === 'extra') {
-            return <Extra key={index} currentComponentDetails={component[1]} style={style} />
-          } else if (index === 0) {
-            return <ProductDetails key={index} currentComponentDetails={component[1]} style={style} />
-          } else if (index === 1) {
-            return <ProductFeatures key={index} currentComponentDetails={component[1]} style={style} />
-          } else {
-            return <ProductDescription key={index} currentComponentDetails={component[1]} style={style} selector={component[0].toString().split('_').join(' ')} descriptor={descriptor} />
-          }
-        })}
-        <FooterJSX style={style} />
-      </div>
-    )
+    {
+      return descriptor !== undefined ?
+        (
+          <div id={style.productFeatures}>
+            <CurrentProduct handleSubmit={this.handleSubmit} />
+            {components.map((component, index) => {
+              if (component[0] === 'extra') {
+                return <Extra key={index} currentComponentDetails={component[1]} style={style} />
+              } else if (index === 0) {
+                return <ProductDetails key={index} currentComponentDetails={component[1]} style={style} />
+              } else if (index === 1) {
+                return <ProductFeatures key={index} currentComponentDetails={component[1]} style={style} />
+              } else {
+                return <ProductDescription key={index} currentComponentDetails={component[1]} style={style} selector={component[0].toString().split('_').join(' ')} descriptor={descriptor} />
+              }
+            })}
+            <FooterJSX style={style} />
+            <div></div>
+          </div>
+        ) : null;
+    }
+
 
   }
 }
