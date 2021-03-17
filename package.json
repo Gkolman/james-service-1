@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "product-details-section",
   "version": "",
   "description": "",
-  "author": "",
+  "author": "James C. Hrivnak",
   "license": "",
   "engines": {
     "node": ">=6.13.0"
