@@ -1,4 +1,5 @@
 import React from 'react';
+import ProductFeaturesCarousel from './ProductFeaturesCarousel.jsx';
 
 
 const ProductFeatures = (props) => {
@@ -19,6 +20,7 @@ const ProductFeatures = (props) => {
             </ul>
           </div>
         </div>
+        <ProductFeaturesCarousel style={style}/>
     </div>
     ) : null
 }

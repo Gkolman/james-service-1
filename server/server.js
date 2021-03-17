@@ -6,6 +6,7 @@ const router = require('./routes.js');
 const cors = require('cors');
 
 app.use(cors());
+
 app.use('/', express.json());
 
 app.use('/', (req, res, next) => {
@@ -20,14 +21,14 @@ app.use('/', (req, res, next) => {
 
 app.use((req, res, next) => {
   res.header('Cross-Origin-Embedder-Policy', 'require-corp');
-  res.header('Cross-Origin-Opener-Policy', 'same-origin')
+  res.header('Cross-Origin-Opener-Policy', 'same-origin');
+  res.header(`Cross-Origin-Resource-Policy`, 'cross-origin');
   next();
 })
 
 app.use(express.static(__dirname + '/../client/dist'));
 
 app.use('/', router);
-
 
 const port = 3001;
 app.listen(port, () => {

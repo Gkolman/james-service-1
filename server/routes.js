@@ -4,94 +4,127 @@ const path = require('path');
 const access = require('../database/controllers.js');
 const fs = require('fs');
 const test = require('../client/dist/fakeData.js');
+const axios = require('axios');
+
+router.get('/productTemplate', (req, res, next) => {
+    res.status(200).sendFile(path.resolve('client/dist/bundle.js'));
+    // res.sendFile(path.resolve('client/dist/index.html'));
+})
+
+router.get('/images', async (req, res, next) => {
+  // random set of images
+  const page = Math.floor(Math.random() * 100);
+  // number of images to return, changes 0 to 1
+  const limit = Math.floor(Math.random() * 5) || 1;
+  const config = {
+    url: `https://picsum.photos/v2/list?page=${page}&limit=${limit}`,
+    method: 'GET'
+  }
+  let results = await axios(config);
+
+  results = results.data.reduce((arr, item) => {
+    arr.push({url: item.download_url})
+    return arr;
+  }, [])
+  res.status(200).send(results);
+});
 
 router.get('/:productId', async (req, res, next) => {
   if (!req.query.indicator) {
     res.sendFile(path.resolve('client/dist/index.html'));
+    // res.status(200).sendFile(path.resolve('client/dist/bundle.js'));
+  } else if (req.query.indicator === 'activity') {
+    try {
+      const productId = req.params.productId;
+      const result = await access.getActivity(productId);
+      res.json({ activity: result.activity });
+    } catch (err) {
+      console.error(err.message);
+      if (err.message.match(/Cannot read property 'dataValues' of null/gm)) {
+        res.status(404).send(`Product Not Found!`);
+      } else {
+        res.status(500).send('Internal Server Error');
+      }
+    }
   } else {
-    const productId = req.params.productId;
-    const result = await access.getAll(productId);
-    let newObject = {};
-    let featureArr = [];
-    let features = result['dataValues'].product_feature['dataValues']
+    try {
+      const productId = req.params.productId;
+      const result = await access.getAll(productId);
+      const responeObj = {};
+      const featureArr = [];
+      const features = result.product_feature['dataValues']
 
-    for (let key in features) {
-      if (key.match(/feature/gm)) {
-        featureArr.push(features[key]);
-      }
-    }
-
-    let descriptors = result['dataValues'].product_description['dataValues'];
-    let descriptorArr = [[], []];
-    for (let key in descriptors) {
-      if (key !== `id` && !key.match(/atedAt/gm)) {
-        if (key === 'product_description') {
-          descriptorArr[0].push({ [key]: descriptors[key] })
-        } else {
-          descriptorArr[1].push({ [key]: descriptors[key] });
+      for (let key in features) {
+        if (key.match(/feature/gm)) {
+          featureArr.push(features[key]);
         }
       }
-    }
 
-    let materialSpecs = result[`dataValues`].material_specification[`dataValues`];
-    const materialArr = [];
-    for (let key in materialSpecs) {
-      if (key !== `id` && !key.match(/atedAt/)) {
-        materialArr.push({ [key]: materialSpecs[key] });
-      }
-    }
-
-    let technicalDetails = result[`dataValues`].technical_detail[`dataValues`];
-
-    let indicator = false;
-    let technicalArr = [[], []];
-    for (let key in technicalDetails) {
-      if (key !== `id` && !key.match(/atedAt/)) {
-        if (key === `model_size`) {
-          indicator = true;
-          technicalArr[0].push({ [key]: technicalDetails[key] });
-        } else if (indicator === false) {
-          technicalArr[0].push({ [key]: technicalDetails[key] });
-        } else {
-          technicalArr[1].push({ [key]: technicalDetails[key] });
+      const descriptors = result.product_description['dataValues'];
+      const descriptorArr = [[], []];
+      for (let key in descriptors) {
+        if (key !== `id` && !key.match(/atedAt/gm)) {
+          if (key === 'product_description') {
+            descriptorArr[0].push({ [key]: descriptors[key] })
+          } else {
+            descriptorArr[1].push({ [key]: descriptors[key] });
+          }
         }
       }
-    }
-    let careDetails = result[`dataValues`].care_instruction['dataValues'];
-    let careArr = [[], []];
 
-    for (let key in careDetails) {
-      if (key !== `id` && !key.match(/atedAt/)) {
-        if (key === `additional_care_instructions`) {
-          careArr[1].push({ [key]: careDetails[key] });
-        } else {
-          careArr[0].push({ [key]: careDetails[key] });
+      let materialSpecs = result.material_specification[`dataValues`];
+      const materialArr = [];
+      for (let key in materialSpecs) {
+        if (key !== `id` && !key.match(/atedAt/)) {
+          materialArr.push({ [key]: materialSpecs[key] });
         }
       }
-    }
 
-    newObject['product_details'] = result['dataValues'].product_details;
-    newObject['product_features'] = featureArr;
-    newObject['product_description'] = descriptorArr;
-    newObject[`material_specification`] = materialArr;
-    newObject[`technical_details`] = technicalArr;
-    newObject[`care_instructions`] = careArr;
-    res.json(newObject);
+      const technicalDetails = result.technical_detail[`dataValues`];
+
+      let indicator = false;
+      const technicalArr = [[], []];
+      for (let key in technicalDetails) {
+        if (key !== `id` && !key.match(/atedAt/)) {
+          if (key === `model_size`) {
+            indicator = true;
+            technicalArr[0].push({ [key]: technicalDetails[key] });
+          } else if (indicator === false) {
+            technicalArr[0].push({ [key]: technicalDetails[key] });
+          } else {
+            technicalArr[1].push({ [key]: technicalDetails[key] });
+          }
+        }
+      }
+      const careDetails = result.care_instruction['dataValues'];
+      const careArr = [[], []];
+
+      for (let key in careDetails) {
+        if (key !== `id` && !key.match(/atedAt/)) {
+          if (key === `additional_care_instructions`) {
+            careArr[1].push({ [key]: careDetails[key] });
+          } else {
+            careArr[0].push({ [key]: careDetails[key] });
+          }
+        }
+      }
+
+      responeObj['product_details'] = result.product_details;
+      responeObj['product_features'] = featureArr;
+      responeObj['product_description'] = descriptorArr;
+      responeObj[`material_specification`] = materialArr;
+      responeObj[`technical_details`] = technicalArr;
+      responeObj[`care_instructions`] = careArr;
+      res.json(responeObj);
+    } catch(err) {
+      console.error(err.message);
+      if (err.message.match(/Cannot read property 'dataValues' of null/gm)) {
+        res.status(404).send(`Product Not Found!`);
+      } else {
+        res.status(500).send('Internal Server Error');
+      }
+    }
   }
 });
-
-router.get('/info', (req, res, next) => {
-  // console.log('\n\n\n\n\n\n\n\n\n\n')
-  // res.status(200).send('info working');
-  // res.sendFile('/../client/dist/index.html');
-
-})
-
-router.get('/products', (req, res, next) => {
-  // res.sendFile(path.join(__dirname + '/../client/dist/index.html'));
-
-});
-
-
 
 module.exports = router;
