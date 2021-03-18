@@ -20,6 +20,9 @@ class App extends React.Component {
       // url: `http://localhost:9000/${productId}`,
       url: window.location.href,
       params: {
+        // service is for the proxy (all services)
+        service: 'james',
+        // indicator is for building the service only
         indicator: 'all'
       }
     }
