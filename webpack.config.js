@@ -62,7 +62,7 @@ module.exports = {
     ],
   },
   devServer: {
-    port: 9000,
+    port: 8002,
     contentBase: path.join(__dirname, 'client/dist'),
     proxy: {
       "/": "http://localhost:3001"
