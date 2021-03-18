@@ -11,19 +11,15 @@ router.get('/productTemplate', (req, res, next) => {
     // res.sendFile(path.resolve('client/dist/index.html'));
 })
 
-router.get('/images', async (req, res, next) => {
-  // random set of images
-  const page = Math.floor(Math.random() * 100);
-  // number of images to return, changes 0 to 1
-  const limit = Math.floor(Math.random() * 5) || 1;
+router.get('/images/:productId', async (req, res, next) => {
+  const productId = req.params.productId
   const config = {
-    url: `https://picsum.photos/v2/list?page=${page}&limit=${limit}`,
+    url: `http://localhost:8001/display/${productId}`,
     method: 'GET'
   }
   let results = await axios(config);
-
-  results = results.data.reduce((arr, item) => {
-    arr.push({url: item.download_url})
+  results = JSON.parse(results.data.urls).reduce((arr, item) => {
+    arr.push({url: item})
     return arr;
   }, [])
   res.status(200).send(results);

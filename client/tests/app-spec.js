@@ -27,7 +27,7 @@ describe('Content', () => {
   beforeEach(async () => {
     wrapper = mount(<App />)
     delete window.location
-    window.location = new URL('http://localhost:9000/1')
+    window.location = new URL('http://localhost:8002/1')
     const instance = wrapper.instance();
     await instance.componentDidMount();
     await wrapper.update()
