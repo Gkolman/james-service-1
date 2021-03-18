@@ -29,19 +29,18 @@ class ProductFeaturesCarousel extends React.Component {
   }
 
   async componentDidMount() {
+    const productId = window.location.href.split('/').filter((item) => { return Number(item) }).join('') || 1;
     const config = {
-      url: `http://localhost:9000/images`,
-      method: `GET`
+      url: `http://localhost:8002/images/${productId}`,
+      method: `GET`,
     }
     const results = await axios(config)
-
     this.setState({
       images: results.data
     }, () => {
       // console.log(this.state)
     })
   }
-
   render() {
     const { featuresSlider, sliderRoot, slider, sliderViewport, innerSlider, figureRoot, figureFeatures, pictureRoot, arrowButton, prevNextButton, prev, next, arrowButtonIcon, arrow } = style;
     const { images } = this.state;

@@ -20,7 +20,8 @@ class App extends React.Component {
       // url: `http://localhost:9000/${productId}`,
       url: window.location.href,
       params: {
-        indicator: 'all'
+        indicator: 'all',
+        service: 'details'
       }
     }
     console.log(config);

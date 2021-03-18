@@ -6,7 +6,7 @@ const fs = require('fs');
 const test = require('../client/dist/fakeData.js');
 const axios = require('axios');
 
-router.get('/productTemplate', (req, res, next) => {
+router.get('/productBundle', (req, res, next) => {
     res.status(200).sendFile(path.resolve('client/dist/bundle.js'));
     // res.sendFile(path.resolve('client/dist/index.html'));
 })
